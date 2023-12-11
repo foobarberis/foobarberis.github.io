@@ -19,6 +19,7 @@ header {
 	text-align: center;
 	border-bottom: 1px solid grey;
 	/* Thin grey line below the header */
+	padding: 1em;
 }
 
 /* Footer styles */
@@ -26,33 +27,43 @@ footer {
 	text-align: center;
 	border-top: 1px solid grey;
 	/* Thin grey line above the footer */
+	padding: 1em;
 }
 
 /* Reset list styles */
-header ul {
+nav ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
 
 /* Navigation menu styles */
-header nav ul {
+nav ul {
 	display: inline-block;
 	/* Center the menu */
 }
 
-header nav ul li {
+nav ul li {
 	display: inline;
 	/* Display links side by side */
 	margin: 0 10px;
 	/* Spacing between links */
 }
 
-header nav ul li a {
+nav ul li a {
 	text-decoration: none;
 	/* Optional: Removes underline from links */
 	color: black;
 	/* Optional: Set link color */
+}
+
+nav img {
+	display: inline-block;
+	/* Removes default inline spacing */
+	background: transparent;
+	/* Ensures background is transparent */
+	border: none;
+	/* Removes any border */
 }
 
 /* LISTS */
@@ -113,7 +124,7 @@ pre {
 
 /* IMAGES */
 
-img {
+figure img {
 	display: block;
 	/* Allows margin auto to work for centering */
 	margin: 0 auto;

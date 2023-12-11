@@ -9,11 +9,12 @@
 </head>
 
 <body>
+
 	<header>
 		<nav>
 			<ul>
-				<li><a href="/index.html">Home</a></li>
-				<li><a href="/articles.html">Articles</a></li>
+				<li><a href="/index.html"><img src="/icons/home.svg" alt="Home"></a></li>
+				<li><a href="/articles.html"><img src="/icons/articles.svg" alt="Articles"></a></li>
 			</ul>
 		</nav>
 	</header>
@@ -53,15 +54,14 @@
 			<code>myprogram</code>. It's easy to assume that compilation is a single-step process.
 			However, in reality, C compilation involves several stages:
 		<ul>
-			<li><strong>Preprocessing</strong>: This step involves the preprocessor parsing the source file. It expands
+			<li><em>Preprocessing</em>: This step involves the preprocessor parsing the source file. It expands
 				macros,
 				replaces comments with spaces, and substitutes #include directives with the actual content of included
 				files.
 			</li>
-			<li><strong>Compiling</strong>: The compiler turns the preprocessed source into an <a
-					href="https://en.wikipedia.org/wiki/Object_file">object file</a>, typically with a <code>.o</code>
+			<li><em>Compiling</em>: The compiler turns the preprocessed source into an <a href="https://en.wikipedia.org/wiki/Object_file">object file</a>, typically with a <code>.o</code>
 				extension. These files are written in <em>machine code</em> but are not directly executable.</li>
-			<li><strong>Linking</strong>: The final step. Here, the linker combines object files from
+			<li><em>Linking</em>: The final step. Here, the linker combines object files from
 				various modules into one. It also links functions used from libraries into
 				your code. A thorough exploration of the entire compilation process is
 				beyond this article's scope, but these steps are essential to understand
@@ -85,8 +85,7 @@
 
 		<h2 id="how-make-works">How <code>make</code> works</h2>
 		<p>
-			The definition of <code>make</code> as described in the <a
-				href="https://pubs.opengroup.org/onlinepubs/9699919799/utilities/make.html">POSIX standard</a> may
+			The definition of <code>make</code> as described in the <a href="https://pubs.opengroup.org/onlinepubs/9699919799/utilities/make.html">POSIX standard</a> may
 			appear formal, but it is crucial for understanding
 			its functionality. We will analyze this definition, focusing on its
 			key components. To help us in this task, we'll use an example from
@@ -100,8 +99,7 @@
 			<code>input.h</code>.
 		</p>
 		<figure>
-			<img src="../img/diagram-makefile.svg"
-				alt="Diagram showing the relationship between files, prerequisites and targets.">
+			<img src="../img/diagram-makefile.svg" alt="Diagram showing the relationship between files, prerequisites and targets.">
 			<figcaption><em>Diagram showing the relationship between files, prerequisites and targets.</em></figcaption>
 		</figure>
 		<p>So, what does this definition tell us ? First of all that <code>make</code></p>
@@ -144,19 +142,24 @@ input.o: input.c input.h
 		<h2 id="resources">Resources</h2>
 		<ul>
 			<li><a href="https://nullprogram.com/blog/2017/08/20/">https://nullprogram.com/blog/2017/08/20/</a></li>
-			<li><a
-					href="https://pubs.opengroup.org/onlinepubs/9699919799/utilities/make.html">https://pubs.opengroup.org/onlinepubs/9699919799/utilities/make.html</a>
+			<li><a href="https://pubs.opengroup.org/onlinepubs/9699919799/utilities/make.html">https://pubs.opengroup.org/onlinepubs/9699919799/utilities/make.html</a>
 			</li>
-			<li><a
-					href="https://www.iiti.ac.in/people/~ayanm/courses/autumn_2022/CS353/Lab3.pdf">https://www.iiti.ac.in/people/~ayanm/courses/autumn_2022/CS353/Lab3.pdf</a>
+			<li><a href="https://www.iiti.ac.in/people/~ayanm/courses/autumn_2022/CS353/Lab3.pdf">https://www.iiti.ac.in/people/~ayanm/courses/autumn_2022/CS353/Lab3.pdf</a>
 			</li>
 		</ul>
 
 	</main>
 
 	<footer>
-
+		<nav>
+			<ul>
+				<li><a href="mailto:foobarberis@gmail.com"><img src="/icons/mail.svg" alt="Email"></a></li>
+				<li><a href="https://github.com/foobarberis"><img src="/icons/github.svg" alt="Github"></a></li>
+				<li><a href="https://www.linkedin.com/in/matthieu-barberis-037b9a2a3/"><img src="/icons/linkedin.svg" alt="LinkedIn"></a></li>
+			</ul>
+		</nav>
 	</footer>
+
 </body>
 
 </html>
