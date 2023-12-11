@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html class="align-center flex items-center w-100" lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Explore Matthieu Barberis' resume, showcasing his skills in DevOps, cybersecurity, and software development, along with his education and professional experience.">
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/assets/favicon/site.webmanifest">
+	<link rel="preload stylesheet" href="style.css" as="style" type="text/css" crossorigin="anonymous">
+	<link rel="preload" href="/assets/fonts/roboto-flex/static/RobotoFlex-Regular.ttf" as="font" type="font/ttf" fetchpriority="high" crossorigin>
+	<title>Resume | Matthieu Barberis</title>
+
+	<style>
+		li {
+			list-style-type: "•";
+			padding-left: 0.25rem;
+		}
+
+		li::marker {
+			font-size: 1rem;
+		}
+
+		.shadow-1 {
+			box-shadow: 0px 0px 4px 2px rgba(0, 12, 30, 1);
+		}
+
+		.w-icon-resume {
+			width: 1.5rem;
+		}
+
+		/* Page settings for PDF rendering */
+		.page {
+			width: 21cm;
+			min-height: 29.7cm;
+			padding: 0.5cm;
+		}
+
+		@page {
+			size: A4 portrait;
+			margin: 0.5cm;
+		}
+
+		@media print {
+			@page {
+				size: A4 portrait;
+				margin: 0.5cm;
+			}
+
+			.w-40-print {
+				width: 40%;
+			}
+
+			.w-60-print {
+				width: 60%;
+			}
+
+			.bw1-print {
+				border-width: .125rem;
+			}
+
+			.db-print {
+				display: block;
+			}
+
+			.dn-print {
+				display: none;
+			}
+
+			.bt-print {
+				border-top-style: solid;
+			}
+
+			.bb-print {
+				border-bottom-style: solid;
+			}
+
+			.flex-row-print {
+				flex-direction: row;
+			}
+		}
+	</style>
+</head>
+
+<body class="center flex flex-column items-center mw8 roboto" style="min-width: 360px;">
+
+	<page class="flex flex-column-reverse flex-row-ns flex-row-print pa2">
+
+		<!----------- LEFT PANEL ----------->
+		<div class="bg-navy drop-shadow f7 flex flex-column mr3 near-white pa3 w-100 w-40-ns w-40-print">
+
+			<img class="b--near-white ba br-100 bw2 center db-ns db-print dn mb3 shadow-1 w4" src="./assets/images/mbarberi.jpg" alt="Photograph of Matthieu Barberis.">
+
+			<!-- Informations -->
+			<div class="b--near-white bb bt-ns bt-print bw1-ns bw1-print lh-solid">
+				<h3 class="gold lh-solid">Informations</h3>
+				<ul class="list pl2">
+					<li class="flex items-center pv1">
+						<img class="flt-near-white w-icon-resume" src="./assets/icons/address.svg" alt="Address.">&nbsp;&nbsp;&nbsp;
+						Rennes
+					</li>
+					<li class="flex items-center pv1">
+						<img class="flt-near-white w-icon-resume" src="./assets/icons/license.svg" alt="License.">&nbsp;&nbsp;&nbsp;
+						Permis B et véhiculé
+					</li>
+					<li class="flex items-center pv1">
+						<img class="flt-near-white w-icon-resume" src="./assets/icons/github.svg" alt="Github.">&nbsp;&nbsp;&nbsp;
+						<a class="near-white" href="https://github.com/foobarberis">foobarberis</a>
+					</li>
+					<li class="flex items-center pv1">
+						<img class="flt-near-white w-icon-resume" src="./assets/icons/website.svg" alt="Website.">&nbsp;&nbsp;&nbsp;
+						<a class="near-white" href="https://foobarberis.github.io">foobarberis.net</a>
+					</li>
+					<li class="flex items-center pv1">
+						<img class="flt-near-white w-icon-resume" src="./assets/icons/email.svg" alt="Email.">&nbsp;&nbsp;&nbsp;
+						<a class="near-white" href="mailto:foobarberis@gmail.com">foobarberis@gmail.com</a>
+					</li>
+				</ul>
+			</div>
+
+			<!-- Compétences technologiques -->
+			<div class="b--near-white bb bw1 lh-solid">
+				<h3 class="gold lh-solid">Compétences technologiques</h3>
+				<ul class="lh-copy list pl3">
+					<li><span class="b">Langages :</span> Python, Bash/Powershell, C/C++, Javascript, YAML, HTML/CSS</li>
+					<li><span class="b">DevOps & Cloud :</span> Docker, Jenkins, Kubernetes, GitLab CI, AWS, vSphere</li>
+					<li><span class="b">Monitoring :</span> Prometheus, Grafana</li>
+					<li><span class="b">Systèmes :</span> Linux, Windows, macOS</li>
+					<li><span class="b">Documentation :</span> Antora</li>
+				</ul>
+			</div>
+
+			<!-- Formation -->
+			<div class="b--near-white bb bw1 lh-solid">
+				<h3 class="gold">Formation</h3>
+				<div class="f7 pl2">
+					<ul class="bl bw1 pl0" style="padding-left: .15rem">
+						<li>
+							<h4><a class="near-white" href="https://www.francecompetences.fr/recherche/rncp/39783/">Concepteur développeur de solutions informatiques</a></h4>
+						</li>
+						<h5 class="normal pl1">Lyon, 42 Lyon Auvergne-Rhône-Alpes, 2022 - Présent</h5>
+						<li>
+							<h4>CAP &laquo;&nbsp;Menuisier installateur&nbsp;&raquo;</h4>
+						</li>
+						<h5 class="normal pl1">Dijon, CFA des Compagnons du Devoir, 2017 - 2019</h5>
+					</ul>
+				</div>
+			</div>
+
+			<!-- Langues -->
+			<div class="b--near-white bb-ns bb-print bw1-ns bw1-print lh-solid">
+				<h3 class="gold lh-solid">Langues</h3>
+				<ul class="lh-copy pl3">
+					<li><span class="b">Anglais</span>&nbsp;:&nbsp;C2</li>
+					<li><span class="b">Espagnol</span>&nbsp;:&nbsp;B2</li>
+				</ul>
+			</div>
+		</div>
+
+		<!----------- RIGHT PANEL ----------->
+		<div class="f7 flex flex-column items-start w-100 w-60-ns w-60-print">
+
+			<img class="b--black br-100 center db dn-ns dn-print mb3 shadow-1 w4" src="./assets/images/mbarberi.jpg" alt="Matthieu Barberis">
+
+			<h1 class="f2 lh-solid mv1">Matthieu Barberis</h1>
+
+			<div>
+				<h2 class="f5 lh-solid mt0">Ingénieur DevOps Junior | Cloud & Automatisation</h2>
+				<div class="pl2">
+					<p class="lh-copy mv0">
+						Actuellement en formation de
+						<a class="black" href="https://www.francecompetences.fr/recherche/rncp/39783/">&laquo;&nbsp;Concepteur développeur de solutions informatiques&nbsp;&raquo;</a>
+						à l'école 42, je suis passionné par l'automatisation, le cloud et
+						les pratiques DevOps. Fort d'une première expérience
+						professionnelle en tant que stagiaire DevOps chez bioMérieux, où
+						j'ai piloté la migration de pipelines CI/CD et géré
+						l'automatisation d'infrastructure, je cherche à appliquer ces
+						compétences pour construire et maintenir des systèmes robustes,
+						scalables et sécurisés.
+					</p>
+				</div>
+			</div>
+
+			<!-- Expérience professionnelle -->
+			<div>
+				<h3 class="f4 lh-title mt3">Expérience professionnelle</h3>
+				<div class="pl2">
+					<ul class="pl0">
+						<div>
+							<h4 class="f6 flex justify-between lh-solid mv1">
+								<div>Stagiaire DevOps</div>
+								<div>Mars 2025 - Septembre 2025</div>
+							</h4>
+							<h5 class="f7 lh-solid mv2 pl1">bioMérieux, Département R&D, Bruz</h5>
+							<ul class="lh-copy pl3">
+								<li>
+									Piloté la migration des pipelines CI/CD de l'application
+									3PConnect de Jenkins vers GitLab CI, réduisant le temps de
+									maintenance et améliorant la fiabilité des déploiements.
+								</li>
+								<li>
+									Développé des scripts d'automatisation pour provisionner des VM
+									sur vSphere (runners GitLab, environnements de tests), assurant
+									la disponibilité et la reproductibilité de l'infrastructure.
+								</li>
+								<li>
+									Implémenté une stack de monitoring avec Prometheus et Grafana
+									pour superviser les pipelines et l'application, améliorant la
+									visibilité sur la santé de l'infrastructure CI/CD.
+								</li>
+								<li>
+									Conçu des pipelines paramétrables avec une interface web pour
+									déployer des VM d'intégration à la demande, simplifiant le
+									processus pour les équipes de développement.
+								</li>
+								<li>
+									Rédigé une documentation technique complète des processus
+									DevOps, assurant la transmission des connaissances et la
+									pérennité des solutions mises en place.
+								</li>
+							</ul>
+						</div>
+					</ul>
+				</div>
+			</div>
+
+			<!-- Projets informatique -->
+			<!-- TODO Talk about Inception of Things -->
+			<div>
+				<h3 class="f4 lh-title mb0 mt1">Projets académiques et personnels</h3>
+				<p class="lh-copy">
+					Vous pouvez retrouver la liste complète de mes projets sur mon
+					<a class="black" href="https://foobarberis.github.io/portfolio.html">portfolio en ligne</a>.
+				</p>
+				<div class="pl2">
+					<div>
+						<h4 class="f6 lh-solid mv1">ft_transcendance</h4>
+						<h5 class="f7 lh-solid mv2">Jeu de Pong en ligne avec architecture microservices</h5>
+						<ul class="lh-copy pl3 ma0">
+							<li>
+								Développement d'une architecture
+								micro-service conteneurisée avec Docker et
+								Docker Compose.
+							</li>
+							<li>
+								Implémentation d'une API RESTful
+								(Python/Django) et d'un frontend dynamique
+								(Javascript).
+							</li>
+						</ul>
+					</div>
+					<div>
+						<h4 class="f6 lh-solid mv1">minishell</h4>
+						<h5 class="f7 lh-solid mv2">Réimplémentation de Bash en C</h5>
+						<ul class="lh-copy pl3 ma0">
+							<li>
+								Création d'un lexer/parser pour transformer
+								une chaîne de caractères en commandes
+								exécutables.
+							</li>
+						</ul>
+					</div>
+					<div>
+						<h4 class="f6 lh-solid mv1">ft_irc</h4>
+						<h5 class="f7 lh-solid mv2">Serveur IRC (RFC 2812) en C++</h5>
+						<ul class="lh-copy mb0 pl3 ma0">
+							<li>
+								Gestion de multiples connexions clients via
+								des sockets UNIX et des I/O non-bloquantes.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- Autres expériences -->
+			<div>
+				<h3 class="f4 lh-title mt2 mb0">Autres expériences</h3>
+				<div class="pl2">
+					<ul class="list pa0">
+						<li class="pb1"><span class="b">Agent administratif,</span> Centre hospitalier d'Auxerre (2021 - 2022)</li>
+						<li class="pb1"><span class="b">Service Civique,</span> Lycée des métiers Vauban, Auxerre (2019 - 2020)</li>
+						<li class="pb1"><span class="b">Apprenti Menuisier,</span> Menuiserie La Petite Cognée, Auxerre (2017 - 2019)</li>
+						<li class="pb1"><span class="b">Service Civique,</span> Fédération de Pêche de l'Yonne, Auxerre (2017)</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</page>
+</body>
+
+</html>

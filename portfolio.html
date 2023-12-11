@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html class="content-center flex flex-column items-center w-100" lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="The project portfolio of Matthieu Barberis, a Junior DevOps Engineer. Showcasing projects featuring Docker, Linux, CI/CD, and cloud technologies.">
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/assets/favicon/site.webmanifest">
+	<link rel="preload" href="/assets/images/portfolio/inception.png" as="image" type="image/png" fetchpriority="high">
+	<link rel="preload" href="/assets/fonts/roboto-flex/static/RobotoFlex-Regular.ttf" as="font" type="font/ttf" fetchpriority="high" crossorigin>
+	<link rel="preload stylesheet" href="style.css" as="style" type="text/css" crossorigin="anonymous">
+	<title>Portfolio | Matthieu Barberis</title>
+</head>
+
+<body class="bg-white black br2 f5-ns f6 flex flex-column mw7-ns roboto shadow-2 w-100" style="min-width: 320px">
+
+	<header class="bg-navy br1 drop-shadow items-center justify-around near-white pa3">
+
+		<h1 class="center f2-ns f3 gold lh-title"><a class="gold link nowrap" href="/">Matthieu Barberis</a></h1>
+
+		<div class="flex flex-nowrap justify-between">
+
+			<div class="flex justify-around">
+				<a class="hover-gold link near-white nowrap" href="/">About</a>&nbsp;&nbsp;&nbsp;&nbsp;
+				<a class="gold link nowrap" href="/portfolio.html">Portfolio</a>&nbsp;&nbsp;&nbsp;&nbsp;
+				<a class="hover-gold link near-white nowrap" href="/resume.html" target="_blank" rel="noopener noreferrer">
+					Resume
+				</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			</div>
+
+			<div class="flex justify-around">
+				<a class="hover-gold link near-white nowrap" href="mailto:foobarberis@gmail.com">E-mail</a>&nbsp;&nbsp;&nbsp;&nbsp;
+				<a class="hover-gold link near-white nowrap" href="https://github.com/foobarberis">GitHub</a>
+			</div>
+		</div>
+	</header>
+
+	<main class="flex flex-column pa4">
+
+		<p class="lh-copy">
+			This portfolio highlights key projects where I've applied my skills in DevOps, cloud, and systems administration. The projects are ordered by relevance to showcase my most impactful work first.
+		</p>
+
+		<h2>Featured DevOps & Cloud Projects</h2>
+
+		<!-- inception -->
+		<div>
+			<h3 class="lh-title mb2">
+				<a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/inception">inception</a>
+			</h3>
+			<h4 class="gray mt2 normal">docker docker-compose nginx mariadb wordpress</h4>
+			<img class="ba bw1 center db mw--6 w-100" src="/assets/images/portfolio/inception.png" alt="The Docker logo.">
+			<p class="lh-copy">
+				A project demonstrating containerization by deploying a multi-service WordPress site using Docker.
+			</p>
+			<ul>
+				<li>Orchestrated a multi-container web stack (Nginx, WordPress, MariaDB) using Docker Compose.</li>
+				<li>Engineered custom Dockerfiles from scratch for each service to create lightweight and secure images.</li>
+				<li>Configured network and volume bindings to ensure persistent data and seamless communication between services.</li>
+				<li>Demonstrated core skills in containerization, service networking, and infrastructure as code principles.</li>
+			</ul>
+			<hr>
+		</div>
+
+		<!-- ft_transcendence -->
+		<div>
+			<h3 class="lh-title mb2">
+				<a class="black link" href="https://github.com/42-transcendence-org/42-transcendence">ft_transcendence</a>
+			</h3>
+			<h4 class="gray mt2 normal">docker microservices django javascript nginx teamwork</h4>
+			<video class="ba bw1 center db mw--5 w-100" autoplay loop>
+				<source src="/assets/videos/portfolio/transcendence.webm" type="video/webm" />
+			</video>
+			<p class="lh-copy">
+				A real-time online Pong game built with a containerized microservice architecture.
+			</p>
+			<ul>
+				<li>Designed and deployed a containerized microservice application with Docker, featuring separate services for the backend, frontend, and database.</li>
+				<li>Implemented a RESTful API with Django for user authentication, game logic, and data management.</li>
+				<li>Developed a dynamic frontend in pure JavaScript to handle real-time gameplay and user interactions.</li>
+				<li>Configured Nginx as a reverse proxy to route traffic to the appropriate services.</li>
+			</ul>
+			<hr>
+		</div>
+
+		<!-- born2beroot -->
+		<div>
+			<h3 class="lh-title mb2">
+				<a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/born2beroot">born2beroot</a>
+			</h3>
+			<h4 class="gray mt2 normal">linux system-administration security devops</h4>
+			<img class="ba bw1 center db mw--5 w-100" src="/assets/images/portfolio/b2br.webp" alt="Diagram showing how virtualization works.">
+			<p class="lh-copy">
+				A system administration project focused on installing, securing, and configuring a Linux server on a virtual machine.
+			</p>
+			<ul>
+				<li>Installed and hardened a Debian Linux server from scratch in a virtualized environment.</li>
+				<li>Configured a firewall with UFW and implemented security policies with AppArmor.</li>
+				<li>Set up a strong password policy using PAM (Pluggable Authentication Modules).</li>
+				<li>Wrote a Bash script to monitor system status and provide hourly updates.</li>
+				<li>Gained hands-on experience in Linux system administration, security hardening, and monitoring.</li>
+			</ul>
+			<hr>
+		</div>
+
+		<h2>Other Academic & Personal Projects</h2>
+
+		<p>
+			You can find all my projects for 42 in this
+			<a class="black" href="https://github.com/foobarberis/42-common-core/tree/main">
+				repository
+			</a>
+			or click on each project's name to see its code.
+		</p>
+
+		<!-- Truff' and Co -->
+		<div>
+			<h3 class="lh-title mb2">
+				<a class="black link" href="https://truff-and-co.fr/">Truff' and Co</a>
+			</h3>
+			<h4 class="gray mt2 normal">html css web-design</h4>
+			<img class="ba bw1 center db mw5 w-100" src="/assets/images/portfolio/truffandco.jpg" alt="Screenshot of the Truff and Co website.">
+			<p class="lh-copy">
+				A simple, lightweight, and responsive website developed for a pet-sitting business, focusing on accessibility and fast load times.
+			</p>
+			<hr>
+		</div>
+
+		<!-- 3D Computer Graphics -->
+		<div>
+			<h3 class="lh-title mb2">
+				<a class="black link" href="https://pikuma.com/courses/learn-3d-computer-graphics-programming">
+					3D Computer Graphics Programming
+				</a>
+			</h3>
+			<h4 class="gray mt2 normal">3d-graphics c mathematics</h4>
+			<video class="ba bw1 center db mw--6 w-100" autoplay loop>
+				<source src="/assets/videos/portfolio/f-22.webm" type="video/webm" />
+			</video>
+			<p class="lh-copy">
+				A course on 3D graphics programming from first principles using C, covering transformations, projections, and lighting.
+			</p>
+			<hr>
+		</div>
+
+		<!-- 6502 Assembly -->
+		<div>
+			<h3 class="lh-title mb2">
+				<a class="black link" href="https://pikuma.com/courses/learn-assembly-language-programming-atari-2600-games">
+					Atari 2600 Programming with 6502 Assembly
+				</a>
+			</h3>
+			<h4 class="gray mt2 normal">computer-architecture 6502-assembly</h4>
+			<img class="ba bw1 center db mw--6 w-100" src="/assets/images/portfolio/atari2600.jpg" alt="Picture of an Atari 2600.">
+			<p class="lh-copy">
+				A deep dive into 6502 assembly and computer architecture by programming a game for the Atari 2600 console.
+			</p>
+			<hr>
+		</div>
+
+		<!-- ft_irc -->
+		<div>
+			<h3 class="lh-title mb2">
+				<a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/ft_irc">ft_irc</a>
+			</h3>
+			<h4 class="gray mt2 normal">c++ git network-programming teamwork</h4>
+			<img class="ba bw1 center db mw6 w-100" src="/assets/images/portfolio/irc.jpg" alt="An IRC client connected to a server.">
+			<p class="lh-copy">
+				An IRC server compliant with RFC 1459, built in C++ to handle multiple simultaneous connections using non-blocking I/O.
+			</p>
+			<hr>
+		</div>
+
+		<!-- CPP Modules -->
+		<div>
+			<h3 class="lh-title mb2">
+				<a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/cpp-modules">C++ Modules</a>
+			</h3>
+			<h4 class="gray mt2 normal">c++ git object-oriented-programming</h4>
+			<img class="ba bw1 center db mw--4" src="/assets/images/portfolio/c++.png" alt="The C++ logo.">
+			<p class="lh-copy">
+				An extensive introduction to Object-Oriented Programming and C++98, covering core concepts like polymorphism, templates, and the STL.
+			</p>
+			<hr>
+		</div>
+
+		<!-- cub3d -->
+		<div>
+			<h3 class="lh-title mb2">
+				<a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/cub3d">cub3d</a>
+			</h3>
+			<h4 class="gray mt2 normal">c git teamwork graphics-programming</h4>
+			<img class="ba bw1 center db mw6 w-100" src="/assets/images/portfolio/cub3d.jpg" alt="A screenshot of the game showing Wolfenstein-like corridors.">
+			<p class="lh-copy">
+				A 3D game engine similar to Wolfenstein 3D, built from scratch in C using ray casting techniques for rendering.
+			</p>
+			<hr>
+		</div>
+
+		<!-- netpractice -->
+		<div>
+			<h3 class="lh-title mb2">
+				<a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/netpractice">netpractice</a>
+			</h3>
+			<h4 class="gray mt2 normal">networking</h4>
+			<img class="ba bw1 center db mw--6 w-100" src="/assets/images/portfolio/netpractice.jpg" alt="Screenshot of one of the puzzles.">
+			<p class="lh-copy">
+				A series of puzzles designed to teach the fundamentals of TCP/IP networking, including subnetting and routing.
+			</p>
+			<hr>
+		</div>
+
+		<!-- minishell -->
+		<div>
+			<h3 class="lh-title mb2">
+				<a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/minishell">minishell</a>
+			</h3>
+			<h4 class="gray mt2 normal">c git shell system-programming teamwork</h4>
+			<img class="ba bw1 center db mw6 w-100" src="/assets/images/portfolio/minishell.jpg" alt="Screenshot of Bash's manual page.">
+			<p class="lh-copy">
+				A custom shell that replicates key features of Bash, including pipes, redirections, and command execution using a lexer and parser.
+			</p>
+			<hr>
+		</div>
+
+		<!-- philosophers -->
+		<div>
+			<h3 class="lh-title mb2">
+				<a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/philosophers/philo">philosophers</a>
+			</h3>
+			<h4 class="gray mt2 normal">c git multithreading system-programming</h4>
+			<img class="ba bw1 center db mw5 w-100" src="/assets/images/portfolio/philosophers.jpg" alt="Illustration of the dining philosophers problem.">
+			<p class="lh-copy">
+				A C program that solves the classic dining philosophers problem, demonstrating multithreading and deadlock prevention with mutexes.
+			</p>
+			<hr>
+		</div>
+
+		<!-- fdf -->
+		<div>
+			<h3 class="lh-title mb2">
+				<a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/fdf">fdf</a>
+			</h3>
+			<h4 class="gray mt2 normal">c git graphics-programming</h4>
+			<img class="ba bw1 center db mw7 w-100" src="/assets/images/portfolio/fdf.png" alt="Screenshot of the program showing two different maps: Mars and the Mandelbrot Set.">
+			<p class="lh-copy">
+				A wireframe 3D graphics project that processes elevation data from a file to render a landscape.
+			</p>
+			<hr>
+		</div>
+
+		<!-- push_swap -->
+		<div>
+			<h3 class="lh-title mb2">
+				<a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/push_swap">push_swap</a>
+			</h3>
+			<h4 class="gray mt2 normal">c git algorithms</h4>
+			<video class="ba bw1 center db mw6 w-100" autoplay loop>
+				<source src="/assets/videos/portfolio/push_swap.webm" type="video/webm" />
+			</video>
+			<p class="lh-copy">
+				An algorithm project focused on sorting data on a stack with a limited set of instructions in the fewest moves possible.
+			</p>
+			<hr>
+		</div>
+
+		<!-- minitalk -->
+		<div>
+			<h3 class="lh-title mb2">
+				<a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/minitalk">minitalk</a>
+			</h3>
+			<h4 class="gray mt2 normal">c git signals system-programming</h4>
+			<img class="ba bw1 center db mw--5 w-100" src="/assets/images/portfolio/minitalk.jpg" alt="Screenshot showing the code of an important function.">
+			<p class="lh-copy">
+				A client-server program that communicates exclusively through UNIX signals to transmit text, including Unicode characters.
+			</p>
+			<hr>
+		</div>
+
+		<!-- get_next_line -->
+		<div>
+			<h3 class="lh-title mb2">
+				<a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/get_next_line">get_next_line</a>
+			</h3>
+			<h4 class="gray mt2 normal">c git system-programming</h4>
+			<img class="ba bw1 center db mw--5 w-100" src="/assets/images/portfolio/gnl.jpg" alt="Screenshot showing the code of an important function.">
+			<p class="lh-copy">
+				A C function that reads from a file descriptor and returns one line at a time, handling different buffer sizes and multiple files.
+			</p>
+			<hr>
+		</div>
+
+		<!-- ft_printf -->
+		<div>
+			<h3 class="lh-title mb2">
+				<a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/ft_printf">ft_printf</a>
+			</h3>
+			<h4 class="gray mt2 normal">c git system-programming</h4>
+			<img class="ba bw1 center db mw--5 w-100" src="/assets/images/portfolio/printf.jpg" alt="Screenshot showing the code of an important function.">
+			<p class="lh-copy">
+				A complete reimplementation of the C standard library function `printf(3)` with support for various format specifiers.
+			</p>
+			<hr>
+		</div>
+
+		<!-- libft -->
+		<div>
+			<h3 class="lh-title mb2">
+				<a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/libft">libft</a>
+			</h3>
+			<h4 class="gray mt2 normal">c git system-programming</h4>
+			<img class="ba bw1 center db mw--5 w-100" src="/assets/images/portfolio/libft.jpg" alt="Screenshot showing the code of an important function.">
+			<p class="lh-copy">
+				A custom C library of general-purpose functions, serving as a foundation for all subsequent C projects at 42.
+			</p>
+			<hr>
+		</div>
+
+		<!-- 42 Piscine -->
+		<div>
+			<h3 class="lh-title mb2">
+				<a class="black link" href="https://github.com/foobarberis/42-piscine">42 Piscine</a>
+			</h3>
+			<h4 class="gray mt2 normal">c git problem-solving teamwork</h4>
+			<img class="ba bw1 center db mw--5 w-100" src="/assets/images/portfolio/piscine.png" alt="Logo of 42 School.">
+			<p class="lh-copy">
+				A repository containing all exercises completed during the Piscine, the intensive one-month C programming bootcamp and selection process for 42.
+			</p>
+		</div>
+
+	</main>
+</body>
+
+</html>
