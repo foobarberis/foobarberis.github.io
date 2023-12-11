@@ -1,17 +1,22 @@
 /* FONTS */
 @font-face {
 	font-family: 'NotoSerif';
-	src: url('fonts/NotoSerif-Regular.ttf') format('truetype');
+	src: url('/fonts/NotoSerif-Regular.ttf') format('truetype');
 }
 
 @font-face {
 	font-family: 'NotoSans';
-	src: url('fonts/NotoSans-Regular.ttf') format('truetype');
+	src: url('/fonts/NotoSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'NotoSansBold';
+	src: url('/fonts/Noto_Sans/NotoSans-Bold.ttf') format('truetype');
 }
 
 @font-face {
 	font-family: 'NotoSansMono';
-	src: url('fonts/NotoSansMono-Regular.ttf') format('truetype');
+	src: url('/fonts/NotoSansMono-Regular.ttf') format('truetype');
 }
 
 /* HEADER / FOOTER */
@@ -94,7 +99,7 @@ p {
 h1,
 h2,
 h3 {
-	font-family: 'NotoSansMono', 'Courier', sans-serif;
+	font-family: 'NotoSans', 'Courier', sans-serif;
 }
 
 h1 {
