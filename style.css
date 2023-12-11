@@ -76,7 +76,7 @@ body {
 	font-family: 'NotoSerif', 'Times New Roman', serif;
 	font-size: 16px;
 	color: #000000;
-	background-color: #f0f0f0;
+	background-color: #fdfdfd;
 	margin: 8ch auto;
 	max-width: 80ch;
 	padding: 0 10px;
@@ -117,7 +117,7 @@ code {
 }
 
 pre {
-	background-color: #f4f4f4;
+	background-color: #f8f8f8;
 	border: 1px solid #ddd;
 	padding: 10px;
 }
