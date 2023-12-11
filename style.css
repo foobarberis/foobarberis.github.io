@@ -1,0 +1,143 @@
+/* FONTS */
+@font-face {
+	font-family: 'NotoSerif';
+	src: url('fonts/NotoSerif-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'NotoSans';
+	src: url('fonts/NotoSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'NotoSansMono';
+	src: url('fonts/NotoSansMono-Regular.ttf') format('truetype');
+}
+
+/* HEADER / FOOTER */
+header {
+	text-align: center;
+	border-bottom: 1px solid grey;
+	/* Thin grey line below the header */
+}
+
+/* Footer styles */
+footer {
+	text-align: center;
+	border-top: 1px solid grey;
+	/* Thin grey line above the footer */
+}
+
+/* Reset list styles */
+header ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* Navigation menu styles */
+header nav ul {
+	display: inline-block;
+	/* Center the menu */
+}
+
+header nav ul li {
+	display: inline;
+	/* Display links side by side */
+	margin: 0 10px;
+	/* Spacing between links */
+}
+
+header nav ul li a {
+	text-decoration: none;
+	/* Optional: Removes underline from links */
+	color: black;
+	/* Optional: Set link color */
+}
+
+/* LISTS */
+ul {
+	list-style-type: square;
+}
+
+/* Apply the font to elements */
+body {
+	font-family: 'NotoSerif', 'Times New Roman', serif;
+	font-size: 16px;
+	color: #000000;
+	background-color: #f0f0f0;
+	margin: 8ch auto;
+	max-width: 80ch;
+	padding: 0 10px;
+	text-align: left;
+	line-height: 1.5em;
+	letter-spacing: 0.12em;
+	word-spacing: 0.16em;
+}
+
+p {
+	margin-bottom: 2em;
+}
+
+/* HEADINGS */
+h1,
+h2,
+h3 {
+	font-family: 'NotoSansMono', 'Courier', sans-serif;
+}
+
+h1 {
+	line-height: 1.8;
+}
+
+h2 {
+	line-height: 1.6;
+}
+
+h3 {
+	line-height: 1.4;
+}
+
+/* CODE BLOCKS */
+
+pre,
+code {
+	font-family: 'NotoSansMono', 'Courier', sans-serif;
+}
+
+pre {
+	background-color: #f4f4f4;
+	border: 1px solid #ddd;
+	padding: 10px;
+}
+
+/* IMAGES */
+
+img {
+	display: block;
+	/* Allows margin auto to work for centering */
+	margin: 0 auto;
+	/* Centers the image within its parent element */
+	border: 1px solid #ddd;
+	/* Adds a light grey border */
+	max-width: 100%;
+	/* Ensures the image does not exceed the width of the parent */
+	height: auto;
+	/* Maintains the aspect ratio of the image */
+}
+
+figure {
+	text-align: center;
+	/* Center the content */
+	margin: auto;
+	/* Adjust margin as needed */
+}
+
+figcaption {
+	color: #000000;
+	/* Caption text color */
+	font-size: 0.9em;
+	/* Adjust font size as needed */
+	margin-top: 8px;
+	/* Space between the image and caption */
+}
