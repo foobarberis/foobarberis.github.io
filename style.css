@@ -1,46 +1,13 @@
 /* FONTS */
 
-/* NotoSerif */
-@font-face {
-	font-family: 'NotoSerif';
-	src: url('/fonts/NotoSerif-Regular.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'NotoSerifBold';
-	src: url('/fonts/NotoSerif-Bold.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'NotoSerifItalic';
-	src: url('/fonts/NotoSerif-Italic.ttf') format('truetype');
-}
-
-/* NotoSans */
 @font-face {
 	font-family: 'NotoSans';
-	src: url('/fonts/NotoSans-Regular.ttf') format('truetype');
+	src: url('/assets/NotoSans-Regular.ttf') format('truetype');
 }
 
-@font-face {
-	font-family: 'NotoSansBold';
-	src: url('/fonts/NotoSans-Bold.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'NotoSansItalic';
-	src: url('/fonts/NotoSans-Italic.ttf') format('truetype');
-}
-
-/* NotoSansMono */
 @font-face {
 	font-family: 'NotoSansMono';
-	src: url('/fonts/NotoSansMono-Regular.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'NotoSansMonoBold';
-	src: url('/fonts/NotoSansMono-Bold.ttf') format('truetype');
+	src: url('/assets/NotoSansMono-Regular.ttf') format('truetype');
 }
 
 /* HEADER / FOOTER */
@@ -83,7 +50,7 @@ ul {
 
 /* BODY */
 body {
-	font-family: 'NotoSerif', serif;
+	font-family: 'NotoSans', serif;
 	font-size: 16px;
 	color: #000000;
 	background-color: #ffffff;
