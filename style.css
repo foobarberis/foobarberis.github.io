@@ -1,8 +1,16 @@
-/* FONTS */
-
 @font-face {
 	font-family: 'NotoSans';
 	src: url('/assets/NotoSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'NotoSansBold';
+	src: url('/assets/NotoSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'NotoSansItalic';
+	src: url('/assets/NotoSans-Italic.ttf') format('truetype');
 }
 
 @font-face {
@@ -10,47 +18,32 @@
 	src: url('/assets/NotoSansMono-Regular.ttf') format('truetype');
 }
 
-/* HEADER / FOOTER */
+@media (max-width: 500px) {
+
+	/* For small screen devices */
+	* {
+		font-size: 12px;
+	}
+}
+
+a {
+	font-family: 'NotoSansBold', sans-serif;
+	color: black;
+	text-decoration: none;
+}
+
 header {
 	text-align: center;
 	border-bottom: 2px solid rgb(0, 0, 0);
 }
 
-/* Footer styles */
 footer {
 	text-align: center;
 	border-top: 2px solid rgb(0, 0, 0);
 }
 
-nav ul {
-	/* Center the menu */
-	display: inline-block;
-}
-
-nav ul li {
-	/* Display links side by side */
-	display: inline;
-	/* Spacing between links */
-	margin: 0 10px;
-}
-
-nav img {
-	/* Removes default inline spacing */
-	display: inline-block;
-	/* Ensures background is transparent */
-	background: transparent;
-	/* Removes any border */
-	border: none;
-}
-
-/* LISTS */
-ul {
-	list-style-type: square;
-}
-
-/* BODY */
 body {
-	font-family: 'NotoSans', serif;
+	font-family: 'NotoSans', sans-serif;
 	font-size: 16px;
 	color: #000000;
 	background-color: #ffffff;
@@ -68,13 +61,6 @@ p {
 	margin-bottom: 2em;
 }
 
-/* HEADINGS */
-h1,
-h2,
-h3 {
-	font-family: 'NotoSans', sans-serif;
-}
-
 h1 {
 	line-height: 1.8;
 }
@@ -87,14 +73,17 @@ h3 {
 	line-height: 1.4;
 }
 
-/* CODE BLOCKS */
-pre,
-code {
-	font-family: 'NotoSansMono', sans-serif;
-}
 
 pre {
-	padding-left: 3em;
+	font-family: 'NotoSansMono', monospace;
+	background-color: white;
+	border: 1px solid Black;
+	padding-left: 2%;
+	padding-top: 1ch;
+	padding-bottom: 1ch;
+	/* Only take care of X overflow since this is the only part that can be
+	too wide. The Y axis will never overflow. */
+	overflow: hidden;
 }
 
 /* IMAGES */
