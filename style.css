@@ -18,12 +18,36 @@
 	src: url('/assets/NotoSansMono-Regular.ttf') format('truetype');
 }
 
-@media (max-width: 500px) {
+* {
+	font-size: 16px;
+}
 
-	/* For small screen devices */
+/* For small screen devices */
+@media (max-width: 500px) {
 	* {
 		font-size: 12px;
 	}
+}
+
+html {
+	font-family: 'NotoSans', sans-serif;
+	color: #000000;
+	background-color: #ffffff;
+	max-width: 75%;
+	margin: 1% auto;
+	line-height: 1.4;
+	word-spacing: 0.16em;
+	font-kerning: normal;
+	text-rendering: optimizeLegibility;
+}
+
+#nav-home {
+	margin-bottom: 0.25em;
+}
+
+#nav-links {
+	padding-top: 0.25em;
+	border-top: 1px solid black;
 }
 
 a {
@@ -32,29 +56,20 @@ a {
 	text-decoration: none;
 }
 
+b {
+	font-family: 'NotoSansBold', sans-serif;
+}
+
 header {
-	text-align: center;
-	border-bottom: 2px solid rgb(0, 0, 0);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 footer {
 	text-align: center;
 	border-top: 2px solid rgb(0, 0, 0);
-}
-
-body {
-	font-family: 'NotoSans', sans-serif;
-	font-size: 16px;
-	color: #000000;
-	background-color: #ffffff;
-	margin: 8ch auto;
-	max-width: 80ch;
-	padding: 0 10px;
-	text-align: left;
-	line-height: 1.4;
-	word-spacing: 0.16em;
-	font-kerning: normal;
-	text-rendering: optimizeLegibility;
 }
 
 p {
@@ -72,7 +87,6 @@ h2 {
 h3 {
 	line-height: 1.4;
 }
-
 
 pre {
 	font-family: 'NotoSansMono', monospace;
