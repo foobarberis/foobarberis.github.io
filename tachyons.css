@@ -7820,8 +7820,8 @@ code {
 /* CUSTOM */
 
 @font-face {
-	font-family: "Rubik";
-	src: url("./assets/fonts/rubik.ttf") format("truetype");
+	font-family: "Ubuntu";
+	src: url("./assets/fonts/ubuntu.ttf") format("truetype");
 	font-weight: normal;
 	font-display: optional;
 }
@@ -7833,8 +7833,8 @@ code {
 	font-display: optional;
 }
 
-.rubik {
-	font-family: "Rubik";
+.ubuntu {
+	font-family: "Ubuntu";
 }
 
 .ibm {
