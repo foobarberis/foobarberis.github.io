@@ -36,6 +36,8 @@
       <h1> Portfolio </h1>
 
       <h2>Personnal Projects</h2>
+      <!-- TODO Mention Pikuma courses -->
+      <!-- TODO Write about Truff and Co -->
       <div>
 	https://truff-and-co.fr/
       </div>
@@ -43,60 +45,99 @@
       <h2>42 School Projects</h2>
 
       <p>You can find all my projects for 42 in
-      this <a href="https://github.com/foobarberis/42-common-core/tree/main">repository</a>
+      this <a class="black" href="https://github.com/foobarberis/42-common-core/tree/main">repository</a>
       or you can click on each project's name to go directly to the
       relevent code.</p>
 
       <!-- ft_transcendence -->
       <div>	
-	<h3 class="lh-title"><a class="black link" href="https://github.com/42-transcendence-org/42-transcendence">ft_transcendence</a></h3>
+	<h3 class="lh-title"><a class="black link"
+				href="https://github.com/42-transcendence-org/42-transcendence">ft_transcendence</a></h3>
+
+	<video class="ba db center w-50" autoplay loop>
+	  <source src="/assets/vid/transcendence.webm" type="video/webm" />
+	</video>
+
 	<p class="lh-copy">
-	  The goal of this project is to create a website which allow
-	  people to play Pong locally. While the base case for the
-	  project is very simple, we added a lot of interesting
-	  features like a login system and user profiles, match and
-	  tournament histories, the ability to play the game remotely
-	  or play against the CPU.
+	  The goal of this project is to create a website that allows people to
+	  play Pong locally.
 	</p>
+
+	<p class="lh-copy">
+	  While the base requirements for this project were rather simple, we
+	  added many interesting features, such as a login system, user
+	  profiles, match and tournament histories, and the ability to play the
+	  game remotely or against the CPU.
+	</p>
+	
+	<p class="lh-copy">
+	  In this project, I was in charge of handling all aspects related to
+	  the game (graphics, sound, gameplay, and network code) as well as most
+	  of the backend using Django.
+	</p>
+
 	<p class="gray ibm"> > '(css django docker git html javascript nginx python teamwork)</p>
       </div>
 
       <!-- ft_irc -->
       <div>
-	<h3 class="lh-title"><a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/ft_irc">ft_irc</a></h3>
+	<h3 class="lh-title"><a class="black link"
+	href="https://github.com/foobarberis/42-common-core/tree/main/ft_irc">ft_irc</a></h3>
+
 	<p class="lh-copy">
-	  The goal of this group project was to write an IRC server
-	  capable of handling many simultaneous connections. I was in
-	  charge of writing the network code as well as implementing
-	  the QUIT, NICK, USER and PASS commands.
+	  The goal of this group project is to write
+	  an <a class="black" href="https://www.rfc-editor.org/rfc/rfc1459">RFC
+	  1459</a> compliant IRC server capable of handling many
+	  simultaneous connections.
 	</p>
+
+	<p class="lh-copy">
+	  This project was an excellent opportunity to learn the Linux
+	  socket interface, as I was in charge of writing the network
+	  code and implementing the QUIT, NICK, USER, and PASS
+	  commands.
+	</p>
+
 	<p class="gray ibm"> > '(c++ git network-programming sockets teamwork)</p>
       </div>
 
       <!-- CPP Modules -->
       <div>
-	<h3 class="lh-title"><a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/cpp-modules">C++ Modules</a></h3>
+	<h3 class="lh-title"><a class="black link"
+	href="https://github.com/foobarberis/42-common-core/tree/main/cpp-modules">C++
+	Modules</a></h3>
+	
 	<p class="lh-copy">
-	  This project is an introduction to object-oriented
-	  programming and C++. This project consists of many small
-	  exercises which aims to cover most of the important features
-	  of C++98 including class polymorphism and templates. While
-	  this project uses C++98, it is a good introduction to the
-	  simplest (in terms of number of features) of C++. This
-	  provides good fundamentals and is a great starting point to
-	  later start learning more moder version of C++.
+	  This project is an introduction to object-oriented programming and
+	  C++. It consists of many small exercises aimed at covering most of the
+	  important features of C++98, including polymorphism, templates, and
+	  the STL. While this project uses C++98, it teaches essential
+	  fundamentals and serves as a great starting point for later learning
+	  more modern versions of C++.
 	</p>
+	
 	<p class="gray ibm"> > '(c++ git object-oriented-programming)</p>
       </div>
 
       <!-- cub3d -->
       <div>
 	<h3 class="lh-title"><a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/cub3d">cub3d</a></h3>
-	<img class="ba w-100" src="./assets/img/test.png">
+	<img class="ba w-100" src="/assets/img/cub3d.png">
+
 	<p class="lh-copy">
-	  The goal of this project is to implement a small FPS game
-	  using ray-casting.
+	  The goal of this project is to implement a Wolfenstein 3D-style game
+	  using ray casting.
 	</p>
+
+	<p class="lh-copy">
+	  This project is an excellent introduction to computer
+	  graphics and taught me a lot about the geometry behind
+	  making a 2D image appear 3D, as well as some famous computer
+	  graphics algorithms, like the <a class="black"
+	  href="https://en.wikipedia.org/wiki/Digital_differential_analyzer_(graphics_algorithm)">Digital
+	  Differential Analyzer</a>.
+	</p>
+	
 	<p class="gray ibm"> > '(c git teamwork graphics-programming)</p>
       </div>
 
@@ -104,9 +145,16 @@
       <div>
 	<h3 class="lh-title"><a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/inception">inception</a></h3>
 	<p class="lh-copy">
-	  This project is an introduction to virtualization and
-	  Docker. The goal is to setup a Wordpress website using Docker.
+	  The goal of this project is to setup a Wordpress website using Docker.
 	</p>
+
+	<p class="lh-copy">
+	  It serves is an introduction to virtualization and
+	  Docker. It requires us to setup a small fleet of Docker
+	  containers in order to deploy a Wordpress website wich
+	  relies on MariaDB and nginx.
+	</p>
+		
 	<p class="gray ibm"> > '(docker mariadb networking nginx wordpress)</p>
       </div>
 
