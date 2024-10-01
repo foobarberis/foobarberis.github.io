@@ -7844,3 +7844,7 @@ code {
 .justify-evenly {
 	justify-content: space-evenly;
 }
+
+.miw {
+    min-width: 16rem;
+}
