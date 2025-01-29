@@ -18,7 +18,6 @@
       <div class="nowrap">
 	<a class="hover-black link mid-gray pr2 pr3-ns underline-hover" href="/">Home</a>
 	<a class="black link pr2 pr3-ns underline" href="/portfolio.html">Portfolio</a>
-	<a class="hover-black link mid-gray pr2 pr3-ns underline-hover" href="/quotes.html">Quotes</a>
       </div>
 
       <div class="nowrap">
@@ -27,291 +26,421 @@
       </div>
     </header>
 
-    <!-- One sentence to explain what was the goal of the project. -->
-    <!-- Explain what I did in the project if it was a group project. -->
-    <!-- Mention any important / interesting aspect of the project.  -->
-    <!-- Talk about potential challenges and how they were overcome. -->
     <main class="flex flex-column">
       
       <h1> Portfolio </h1>
 
+      <p class="lh-copy">
+	All projects are listed in order of completion, the newest
+	being at the top and the oldest at the bottom for each category.
+      </p>
+
       <h2>Personnal Projects</h2>
-      <!-- TODO Mention Pikuma courses -->
-      <!-- TODO Write about Truff and Co -->
+
       <div>
-	https://truff-and-co.fr/
+	<h3 class="lh-title">
+	  <a class="black link" href="https://truff-and-co.fr/">Truff' and Co</a>
+	</h3>
+
+	<h4 class="gray ibm normal">html css web-design</h4>
+
+	<img class="ba center db w-33" src="/assets/img/truffandco.png">
+
+	<p class="lh-copy">
+	  This project is a website I made for my sister's pet-sitting
+	  business.
+	</p>
+
+	<ul>
+	  <li>Custom-coded HTML and CSS (no JavaScript).</li>
+	  <li>Utilizes Atomic CSS methodology using <a href="https://tachyons.io/">Tachyons CSS</a>.</li>
+	  <li>Fully responsive design for all screen sizes.</li>
+	  <li>Designed with accessibility in mind, meeting high accessibility standards.</li>
+	  <li>
+	    Lightweight and fast (entire site is just 87KB excluding
+	    images), with a 97/100
+	    <a href="https://developer.chrome.com/docs/lighthouse/overview">Google Lighthouse</a>
+	    score.
+	  </li>
+	</ul>
+
       </div>
       
       <h2>42 School Projects</h2>
 
       <p>You can find all my projects for 42 in
-      this <a class="black" href="https://github.com/foobarberis/42-common-core/tree/main">repository</a>
-      or you can click on each project's name to go directly to the
-      relevent code.</p>
+	this <a class="black" href="https://github.com/foobarberis/42-common-core/tree/main">repository</a>
+	or you can click on each project's name to go directly to the
+	relevent code.</p>
 
       <!-- ft_transcendence -->
       <div>	
-	<h3 class="lh-title"><a class="black link"
-				href="https://github.com/42-transcendence-org/42-transcendence">ft_transcendence</a></h3>
+	<h3 class="lh-title">
+	  <a class="black link" href="https://github.com/42-transcendence-org/42-transcendence">ft_transcendence</a>
+	</h3>
+
+	<h4 class="gray ibm normal">css django docker git html javascript nginx python teamwork</h4>
 
 	<video class="ba center db w-50" autoplay loop>
 	  <source src="/assets/vid/transcendence.webm" type="video/webm" />
 	</video>
 
 	<p class="lh-copy">
-	  The goal of this project is to create a website that allows people to
-	  play Pong locally.
+	  This project is a website that allows users to play Pong
+	  locally, with additional features like login, user profiles,
+	  and online play.
 	</p>
-
-	<p class="lh-copy">
-	  While the base requirements for this project were rather simple, we
-	  added many interesting features, such as a login system, user
-	  profiles, match and tournament histories, and the ability to play the
-	  game remotely or against the CPU.
-	</p>
-	
-	<p class="lh-copy">
-	  In this project, I was in charge of handling all aspects related to
-	  the game (graphics, sound, gameplay, and network code) as well as most
-	  of the backend using Django.
-	</p>
-
-	<p class="gray ibm"> > '(css django docker git html javascript nginx python teamwork)</p>
+	<ul>
+	  <li>Containerized micro-service architecture using Docker.</li>
+	  <li>Game graphics, physics and sounds in pure JavaScript.</li>
+	  <li>Remote play using client-side prediction and interpolation for a smooth experience.</li>
+	  <li>Option to play against other users locally, remotely or against the CPU.</li>
+	  <li>Login system for personalized user experience giving
+	  access to user profiles with friendlist as well as match and
+	  tournament history.</li>
+	</ul>
       </div>
 
       <!-- ft_irc -->
       <div>
-	<h3 class="lh-title"><a class="black link"
-	href="https://github.com/foobarberis/42-common-core/tree/main/ft_irc">ft_irc</a></h3>
+	<h3 class="lh-title">
+	  <a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/ft_irc">ft_irc</a>
+	</h3>
+
+	<h4 class="gray ibm normal">c++ git network-programming sockets teamwork</h4>
 
 	<p class="lh-copy">
-	  The goal of this group project is to write
-	  an <a class="black" href="https://www.rfc-editor.org/rfc/rfc1459">RFC
-	  1459</a> compliant IRC server capable of handling many
-	  simultaneous connections.
+	  This project involved creating an RFC 1459 compliant IRC
+	  server capable of handling multiple simultaneous
+	  connections.
 	</p>
-
-	<p class="lh-copy">
-	  This project was an excellent opportunity to learn the Linux
-	  socket interface, as I was in charge of writing the network
-	  code and implementing the QUIT, NICK, USER, and PASS
-	  commands.
-	</p>
-
-	<p class="gray ibm"> > '(c++ git network-programming sockets teamwork)</p>
+	<ul>
+	  <li>Compliance with RFC 1459 standards for IRC protocol.</li>
+	  <li>Designed to handle many simultaneous connections without blocking or forking.</li>
+	  <li>Network code developed using the Linux socket interface.</li>
+	  <li>Implements all the essential IRC commands to manage users and channels.</li>
+	</ul>
       </div>
 
       <!-- CPP Modules -->
       <div>
-	<h3 class="lh-title"><a class="black link"
-	href="https://github.com/foobarberis/42-common-core/tree/main/cpp-modules">C++
-	Modules</a></h3>
+	<h3 class="lh-title">
+	  <a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/cpp-modules">C++ Modules</a>
+	</h3>
+	
+	<h4 class="gray ibm normal">c++ git object-oriented-programming</h4>
 	
 	<p class="lh-copy">
-	  This project is an introduction to object-oriented programming and
-	  C++. It consists of many small exercises aimed at covering most of the
-	  important features of C++98, including polymorphism, templates, and
-	  the STL. While this project uses C++98, it teaches essential
-	  fundamentals and serves as a great starting point for later learning
-	  more modern versions of C++.
+	  This project serves as an introduction to object-oriented
+	  programming and C++, covering core features of C++98.
 	</p>
 	
-	<p class="gray ibm"> > '(c++ git object-oriented-programming)</p>
+	<ul>
+	  <li>Introduction to object-oriented programming concepts in C++.</li>
+	  <li>Covers essential features of C++98: polymorphism, templates, and the STL.</li>
+	  <li>Provides a foundation for learning more modern versions of C++.</li>
+	  <li>Consists of various exercises to reinforce key C++ concepts.</li>
+	  <li>Great starting point for beginners to build C++ programming skills.</li>
+	</ul>
       </div>
 
       <!-- cub3d -->
       <div>
-	<h3 class="lh-title"><a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/cub3d">cub3d</a></h3>
+	<h3 class="lh-title">
+	  <a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/cub3d">cub3d</a>
+	</h3>
+	
 	<img class="ba w-100" src="/assets/img/cub3d.png">
 
-	<p class="lh-copy">
-	  The goal of this project is to implement a Wolfenstein 3D-style game
-	  using ray casting.
-	</p>
+	<h4 class="gray ibm normal">c git teamwork graphics-programming</h4>
 
 	<p class="lh-copy">
-	  This project is an excellent introduction to computer
-	  graphics and taught me a lot about the geometry behind
-	  making a 2D image appear 3D, as well as some famous computer
-	  graphics algorithms, like the <a class="black"
-	  href="https://en.wikipedia.org/wiki/Digital_differential_analyzer_(graphics_algorithm)">Digital
-	  Differential Analyzer</a>.
+	  This project involves implementing a Wolfenstein 3D-style
+	  game using ray casting, providing an introduction to
+	  computer graphics.
 	</p>
-	
-	<p class="gray ibm"> > '(c git teamwork graphics-programming)</p>
+	<ul>
+	  <li>Implemented a 3D game using ray casting, similar to Wolfenstein 3D.</li>
+	  <li>Implemented the ability to create, modify and share maps
+	  via a simple text-based format which allows the user to
+	  change the layout or the textures of the map.</li>
+	  <li>Introduction to computer graphics and 3D rendering techniques.</li>
+	  <li>Learned the geometry behind transforming 2D images into 3D visuals.</li>
+	  <li>Hands-on experience with fundamental graphics algorithms and techniques.</li>
+	</ul>
       </div>
 
       <!-- inception -->
       <div>
-	<h3 class="lh-title"><a class="black link"
-	href="https://github.com/foobarberis/42-common-core/tree/main/inception">inception</a></h3>
-	<p class="lh-copy">
-	  The goal of this project is to setup a Wordpress website
-	  using Docker.
-	</p>
+	<h3 class="lh-title">
+	  <a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/inception">inception</a>
+	</h3>
+
+	<h4 class="gray ibm normal">docker mariadb networking nginx wordpress</h4>
 
 	<p class="lh-copy">
-	  It serves as an introduction to virtualization and Docker. This
-	  project helped me deepen my understanding of how to use Docker in
-	  tandem with Docker Compose. I created all images from scratch (instead
-	  of pulling pre-made images from Docker Hub) and configured MariaDB to
-	  work with WordPress, as well as set up Nginx to act as a reverse
-	  proxy.
+	  This project involves setting up a WordPress website using
+	  Docker, offering an introduction to virtualization and
+	  containerization.
 	</p>
-		
-	<p class="gray ibm"> > '(docker mariadb networking nginx wordpress)</p>
+	
+	<ul>
+	  <li>Created a WordPress website using Docker and Docker Compose.</li>
+	  <li>Built all Docker images from scratch instead of using pre-made ones.</li>
+	  <li>Configured MariaDB to work seamlessly with WordPress.</li>
+	  <li>Set up Nginx as a reverse proxy for improved performance.</li>
+	  <li>Deepened understanding of Docker and container orchestration.</li>
+	  <li>Hands-on experience with Docker and virtualization concepts.</li>
+	</ul>
       </div>
 
       <!-- netpractice -->
       <div>
-	<h3 class="lh-title"><a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/netpractice">netpractice</a></h3>
+	<h3 class="lh-title">
+	  <a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/netpractice">netpractice</a>
+	</h3>
+
+	<h4 class="gray ibm normal">networking</h4>
 
 	<img class="ba center db w-50" src="/assets/img/netpractice.png">
 
 	<p class="lh-copy">
-	  The goal of this project is to learn more about networking and TCP/IP
-	  by configuring small-scale networks through a series of puzzles.
+	  This project focuses on learning about networking and TCP/IP
+	  by configuring small-scale networks through puzzles.
 	</p>
+	<ul>
+	  <li>Focus on networking fundamentals and TCP/IP protocols.</li>
+	  <li>Learned practical network configuration through a series of puzzles.</li>
+	  <li>Hands-on experience with small-scale network setups.</li>
+	  <li>Developed problem-solving skills in networking scenarios.</li>
+	</ul>
 
-	<p class="gray ibm"> > '(networking)</p>
       </div>
 
       <!-- minishell -->
       <div>
-	<h3 class="lh-title"><a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/minishell">minishell</a></h3>
+	<h3 class="lh-title">
+	  <a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/minishell">minishell</a>
+	</h3>
+
+	<h4 class="gray ibm normal">c git processes shell system-programming teamwork unix-pipes</h4>
+
 	<p class="lh-copy">
-	  The goal of this project is to create a simpler version of
-	  Bash.
+	  This group project involved creating a simplified version of
+	  Bash, supporting pipes, redirections, and tilde expansion.
 	</p>
-	<p class="gray ibm"> > '(c git processes shell system-programming teamwork unix-pipes)</p>
+	<ul>
+	  <li>Developed a simplified version of Bash with key shell features.</li>
+	  <li>Supported pipes (|), redirections (>, <, >>), and tilde (~) expansion.</li>
+	  <li>Implemented the lexer and parser to process user input into executable tokens.</li>
+	  <li>Hands-on experience with shell internals and command-line tools.</li>
+	</ul>
       </div>
 
       <!-- philosophers -->
       <div>
-	<h3 class="lh-title"><a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/philosophers/philo">philosophers</a></h3>
+	<h3 class="lh-title">
+	  <a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/philosophers/philo">philosophers</a>
+	</h3>
+
+	<h4 class="gray ibm normal">c git multithreading system-programming</h4>
+
 	<p class="lh-copy">
-	  This project serves as an introduction to multithreading and
-	  how to synchronize them using mutexes. The goal of this
-	  project is to write a program which solves
-	  the <a href="https://en.wikipedia.org/wiki/Dining_philosophers_problem">dining
-	    philosophers problem</a>.
+	  This project introduces multithreading and synchronization using mutexes, specifically solving the
+	  <a href="https://en.wikipedia.org/wiki/Dining_philosophers_problem">dining philosophers problem.</a>
 	</p>
-	<p class="gray ibm"> > '(c git multithreading system-programming)</p>
+	
+	<ul>
+	  <li>Introduction to multithreading and synchronization concepts.</li>
+	  <li>Solved the classic dining philosophers problem using mutexes.</li>
+	  <li>Implemented argument handling for number of philosophers, eating/sleeping times, and starvation limits.</li>
+	  <li>Hands-on experience with thread synchronization in a real-world problem.</li>
+	  <li>Learned to manage resources and prevent deadlocks in concurrent programs.</li>
+	</ul>
+
       </div>
       
       <!-- fdf -->
       <div>
-	<h3 class="lh-title"><a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/fdf">fdf</a></h3>
+	<h3 class="lh-title">
+	  <a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/fdf">fdf</a>
+	</h3>
+
+	<h4 class="gray ibm normal">c git graphics-programming</h4>
+
 	<p class="lh-copy">
-	  This project is about representing a landscape as a 3D
-	  object in which all surfaces are outlined in lines.
+	  This project focuses on representing a landscape using wireframe
+	  graphics, processing data from a text file to create a visual
+	  representation.
 	</p>
-	<p class="gray ibm"> > '(c git graphics-programming)</p>
+
+	<ul>
+	  <li>Created a wireframe representation of a landscape from text file data.</li>
+	  <li>Validated text file input to ensure data integrity.</li>
+	  <li>Processed elevation data to render an accurate 3D landscape view.</li>
+	  <li>Hands-on experience with file parsing and graphical rendering techniques.</li>
+	  <li>Learned the basics of 3D graphics representation using wireframe models.</li>
+	</ul>
       </div>
 
       <!-- push_swap -->
       <div>
-	<h3 class="lh-title"><a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/push_swap">push_swap</a></h3>
+	<h3 class="lh-title">
+	  <a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/push_swap">push_swap</a>
+	</h3>
+
+	<h4 class="gray ibm normal">c git algorithms</h4>
+
 	<video class="ba w-100" autoplay loop>
 	  <source src="/assets/vid/push_swap.webm" type="video/webm" />
 	</video>
+
 	<p class="lh-copy">
-	  This project serves as an introduction to algorithms and
-	  computational complexity. This project will make you sort
-	  data on a stack, with a limited set of instructions, using
-	  the lowest possible number of actions. To succeed you'll
-	  have to manipulate various types of algorithms and choose
-	  the most appropriate solution (out of many) for an optimized
-	  data sorting.
+	  This project introduces algorithms and computational
+	  complexity by sorting data on a stack using the fewest
+	  possible actions.
 	</p>
-	<p class="gray ibm"> > '(algorithmic-complexity algorithms c git)</p>
+	<ul>
+	  <li>Introduction to algorithms and computational complexity.</li>
+	  <li>Sorted data on a stack with a restricted set of instructions.</li>
+	  <li>Optimized sorting solution to minimize the number of actions.</li>
+	  <li>Hands-on experience with stack-based data manipulation and problem-solving.</li>
+	  <li>Developed a deeper understanding of algorithm efficiency and optimization.</li>
+	</ul>
       </div>
 
       <!-- minitalk -->
       <div>
-	<h3 class="lh-title"><a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/minitalk">minitalk</a></h3>
+	<h3 class="lh-title">
+	  <a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/minitalk">minitalk</a>
+	</h3>
+
+	<h4 class="gray ibm normal">c git signals system-programming</h4>
+
 	<p class="lh-copy">
-	  The purpose of this project is to code a small data exchange
-	  program using UNIX signals. As a bonus, the program also
-	  handles UNICODE characters and provide an acknowledgement
-	  mechanism so that the server can inform the client when it has
-	  received a complete message.
+	  This project involves coding a small data exchange program
+	  using UNIX signals, with added support for UNICODE
+	  characters and acknowledgement mechanisms.
 	</p>
-	<p class="gray ibm"> > '(c git signals system-programming)</p>
+
+	<ul>
+	  <li>Implemented a data exchange program using UNIX signals.</li>
+	  <li>Supported UNICODE characters for enhanced message compatibility.</li>
+	  <li>Included an acknowledgement mechanism for server-client communication.</li>
+	  <li>Ensured reliable message delivery with feedback from the server.</li>
+	  <li>Gained experience with UNIX signals and inter-process communication.</li>
+	</ul>
       </div>
 
       <!-- get_next_line -->
       <div>
-	<h3 class="lh-title"><a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/get_next_line">get_next_line</a></h3>
+	<h3 class="lh-title">
+	  <a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/get_next_line">get_next_line</a>
+	</h3>
+
+	<h4 class="gray ibm normal">c git signals system-programming</h4>
+
 	<p class="lh-copy">
-	  This projects purpose is to make sure you are
-	  confortable working with pointers and null-terminated strings. The
-	  goal is to create a function similar to getline(3) which reads an
-	  input stream and return it one line at a time.
+	  This project focuses on working with pointers and
+	  null-terminated strings by creating a function similar to
+	  `getline(3)` that reads an input stream line by line.
 	</p>
-	<p class="gray ibm"> > '(c git system-programming)</p>
+
+	<ul>
+	  <li>Developed a function to read input streams one line at a time.</li>
+	  <li>Worked with pointers and null-terminated strings for memory management.</li>
+	  <li>Gained hands-on experience with string handling and buffer management.</li>
+	  <li>Created a custom implementation similar to the standard `getline(3)` function.</li>
+	  <li>Strengthened understanding of low-level input/output operations in C.</li>
+	</ul>
       </div>
 
       <!-- born2beroot -->
       <div>
-	<h3 class="lh-title"><a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/born2beroot">born2beroot</a></h3>
+	<h3 class="lh-title">
+	  <a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/born2beroot">born2beroot</a>
+	</h3>
+
+	<h4 class="gray ibm normal">devops cybersecurity linux shell</h4>
+
 	<p class="lh-copy">
-	  The goal of this project is to setup install and configure a
-	  Linux virtual machine. This project serves as an
-	  introduction to Linux and virtual machines. The goal is to
-	  install, configure and monitor a Debian or CentOS VM. Among
-	  other things this required to create partitions using LVM,
-	  to setup a firewall (UFW), to configure AppArmor and to
-	  create strong password policy using Pluggable Authentication
-	  Modules (PAM).
+	  This project involves installing, configuring, and monitoring a
+	  Linux virtual machine, with a focus on security and system
+	  management.
 	</p>
-	<p class="gray ibm"> > '(cybersecurity linux shell system-administration)</p>
+
+	<ul>
+	  <li>Installed and configured a Linux virtual machine.</li>
+	  <li>Created partitions using Logical Volume Manager (LVM).</li>
+	  <li>Set up and managed a firewall using UFW.</li>
+	  <li>Configured AppArmor for enhanced system security.</li>
+	  <li>Implemented a strong password policy using Pluggable Authentication Modules (PAM).</li>
+	  <li>Gained hands-on experience with Linux system administration and security practices.</li>
+	</ul>
       </div>
 
       <!-- ft_printf -->
       <div>
-	<h3 class="lh-title"><a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/ft_printf">ft_printf</a></h3>
+	<h3 class="lh-title">
+	  <a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/ft_printf">ft_printf</a>
+	</h3>
+
+	<h4 class="gray ibm normal">c git system-programming</h4>
+
 	<p class="lh-copy">
-	  This project serves as an introduction to variadic
-	  functions. It is a re-implementation of the C stdlib function
-	  printf(3) which handles the following conversions: c, s, p, d, i,
-	  u, x, X and %.
+	  This project introduces variadic functions by
+	  re-implementing the C standard library function `printf(3)`
+	  to handle multiple format conversions.
 	</p>
-      	<p class="gray ibm"> > '(c git system-programming)</p>
+
+	<ul>
+	  <li>Re-implemented the `printf(3)` function in C.</li>
+	  <li>Handled format conversions: c, s, p, d, i, u, x, X, and %.</li>
+	  <li>Worked with variadic functions to process variable argument lists.</li>
+	  <li>Gained understanding of how to handle different data types in formatted output.</li>
+	  <li>Enhanced skills in memory management and function argument handling.</li>
+	</ul>
       </div>
 
       <!-- libft -->
       <div>
-	<h3 class="lh-title"><a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/libft">libft</a> </h3>
-	<p class="lh-copy">
-	  This project is about coding a C library. It will contain a
-	  lot of general purpose functions future programs will rely
-	  upon. The library contains a lot of functions of
-	  questionnable utility and lack some useful ones. For exemple
-	  functions related to handling linked lists, but since C has
-	  no concept of generic programming these functions apply only
-	  to a specific struct. Some other functions can easily be
-	  replaced i.e bzero by memset. This is why I wrote
-	  <a href="https://github.com/foobarberis/mlc">mlc</a>, a
-	  efficient library which contains less useless functions and
-	  more useful ones.  It a more optimized libc inspired by musl
-	  libc that I ended up using in my projects.
+	<h3 class="lh-title">
+	  <a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/libft">libft</a>
+	</h3>
+
+	<h4 class="gray ibm normal">c git system-programming</h4>
+
+ 	<p class="lh-copy">
+	  This project involved coding a C library containing
+	  general-purpose functions, focusing on improving utility and
+	  optimization for future programs.
 	</p>
-	<p class="gray ibm"> > '(c git system-programming)</p>
+	<ul>
+	  <li>Developed a C library with various general-purpose functions.</li>
+	  <li>Included functions for linked list handling, tailored to specific structs.</li>
+	  <li>Identified and replaced inefficient or redundant functions, like replacing `bzero` with `memset`.</li>
+	  <li>Created <a href="https://github.com/foobarberis/mlc">mlc</a>, a more efficient, optimized version inspired by musl libc.</li>
+	  <li>Focused on providing a leaner, more useful set of functions for future projects.</li>
+	  <li>Improved understanding of C library design and optimization strategies.</li>
+	</ul>
       </div>
 
       <!-- 42 Piscine -->
-      <h3 class="lh-title"><a class="black link" href="https://github.com/foobarberis/42-piscine">42 Piscine</a></h3>
+      <h3 class="lh-title">
+	<a class="black link" href="https://github.com/foobarberis/42-piscine">42 Piscine</a>
+      </h3>
+
       <p class="lh-copy">
-	This repository contains all the exercices I did for the
-	Piscine, which is what the one-month recruitement process for
-	42 is called.
+	This repository contains all the exercises I completed during the Piscine, the one-month recruitment process for 42.
       </p>
+      
+      <ul>
+	<li>Completed various exercises as part of the 42 recruitment process (Piscine).</li>
+	<li>Showcases a range of tasks that demonstrate problem-solving and coding skills.</li>
+	<li>Gained foundational knowledge and hands-on experience in C programming.</li>
+	<li>Serves as a portfolio of work completed during the intense one-month selection period.</li>
+      </ul>
     </main>
-
-    <footer>
-    </footer>
-
   </body>
-
 </html>
+
