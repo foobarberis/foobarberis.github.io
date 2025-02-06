@@ -1,8 +1,5 @@
-<!-- TODO Add more information to the landing page -->
-<!-- TODO Get a domain name -->
-
 <!DOCTYPE html>
-<html class="content-center flex flex-column items-center w-100" lang="en">
+<html class="flex flex-column items-center w-100 h-100" lang="en">
 
   <head>
     <meta charset="UTF-8">
@@ -12,55 +9,64 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="/assets/favicon/site.webmanifest">
     <link rel="stylesheet" href="/tachyons.css">
-    <title>Homepage - Chez Matthieu</title>
+    <title>Homepage | Matthieu Barberis</title>
+
+    
+    <style>
+      .drop-shadow {
+	  text-shadow: 0px 3px #000c1e;
+      }
+    </style>
   </head>
 
-  <body class="bg-white black f5-ns f6 flex flex-column mw7 pa3 pa5-ns roboto w-100">
+  <body class="bg-white black f5-ns f6 flex flex-column mw7-ns w-100 pa3 pa5-ns roboto">
 
-    <header class="flex flex-nowrap justify-between">
-      <div class="nowrap">
-	<a class="black link pr2 pr3-ns underline" href="/">Home</a>
-	<a class="hover-black link mid-gray pr2 pr3-ns underline-hover" href="/portfolio.html">Portfolio</a>
-      </div>
+    <div class="br3 flex flex-column shadow-2">
 
-      <div class="nowrap">
-	<a class="hover-black link mid-gray nowrap pr2 pr3-ns underline-hover" href="https://github.com/foobarberis?tab=repositories">GitHub</a>
-	<a class="hover-black link mid-gray nowrap underline-hover" href="mailto:foobarberis@gmail.com">E-mail</a>
-      </div>
-    </header>
+      <header class="bg-navy br--top br3 drop-shadow flex flex-nowrap h3 items-center justify-around near-white pa2 ph2">
+	
+	<div class="flex justify-around nowrap w-25">
+	  <a class="gold link underline" href="/">Home</a>
+	  <a class="gold hover-near-white link underline-hover" href="/portfolio.html">Portfolio</a>
+	</div>
 
-    <main class="flex flex-column">
+	<div class="db w-25"></div>
+	<div class="db w-25"></div>
 
-      <img class="b--near-black ba br-100 center" style="width: 150px" src="./assets/images/mbarberi.jpg" alt="Matthieu Barberis">
+	<div class="flex justify-around nowrap w-25">
+	  <a class="gold hover-near-white link underline-hover" href="https://github.com/foobarberis">GitHub</a>
+	  <a class="gold hover-near-white link underline-hover" href="mailto:foobarberis@gmail.com">E-mail</a>
+	</div>
+	
+      </header>
 
-      <h1 class="center lh-title">Matthieu Barberis</h1>
+      <main class="flex flex-column pa4">
+	
+	<img class="br-100 center shadow-2" style="width: 150px" src="./assets/images/mbarberi.jpg" alt="Matthieu Barberis">
 
-      <div class="ba br2 mv4 pa3">
+	<h1 class="center lh-title">Matthieu Barberis</h1>
+
 	<p class="lh-copy">
-	  Hello and welcome! I'm Matthieu Barberis, a software
-	  engineer from France.
+	  Welcome! I'm Matthieu Barberis, a software engineer from
+	  France.
 	</p>
 
 	<p class="lh-copy">
-	  You can explore my work by visiting the <a class="black"
-						     href="/portfolio.html">Portfolio</a> page.
-	</p>
-
-	<p class="lh-copy">
-	  If something catches your attention and you'd like to
+	  You can explore my work by visiting the
+	  <a class="black" href="/portfolio.html">Portfolio</a>
+	  page. If something catches your attention and you'd like to
 	  discuss it further, please feel free to reach out
 	  via <a class="black"
-		 href="mailto:foobarberis@gmail.com">email</a>.
+		 href="mailto:foobarberis@gmail.com">e-mail</a>.
 	</p>
 
 	<p class="lh-copy">
-	  I am currently open to new opportunities, so don’t hesitate
-	  to get in touch if you’d like to explore potential
-	  collaborations.
+	  I’m currently seeking new job or internship opportunities,
+	  so feel free to get in touch if you have any openings.
 	</p>
 
-      </div>
-    </main>
+    </div>
 
+    </main>
   </body>
 </html>
