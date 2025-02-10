@@ -9,8 +9,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="/assets/favicon/site.webmanifest">
     <link rel="preload stylesheet" href="/css/tachyons.css" as="style" type="text/css" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/tachyons.css">
-    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="preload stylesheet" href="/css/custom.css" as="style" type="text/css" crossorigin="anonymous">
+    <link rel="preload" href="./assets/images/mbarberi.jpg" as="image" type="image/jpg" fetchpriority="high">
     <title>Homepage | Matthieu Barberis</title>
   </head>
 
@@ -25,7 +25,9 @@
 	<div class="flex justify-around">
 	  <a class="gold link nowrap" href="/">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
 	  <a class="hover-gold link near-white nowrap" href="/portfolio.html">Portfolio</a>&nbsp;&nbsp;&nbsp;&nbsp;
-	  <a class="hover-gold link near-white nowrap" href="/resume.html">Resume</a>&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a class="hover-gold link near-white nowrap" href="/resume.html" target="_blank" rel="noopener noreferrer">
+	    Resume
+	  </a>&nbsp;&nbsp;&nbsp;&nbsp;
 	</div>
 
 	<div class="flex justify-around">
@@ -36,7 +38,7 @@
     </header>
 
     <main class="flex flex-column pa4">
-      
+
       <img class="br-100 center shadow-2" style="width: 200px" src="./assets/images/mbarberi.jpg" alt="Matthieu Barberis">
 
       <div>
@@ -82,16 +84,15 @@
 	<hr>
 	<h2>Skills</h2>
 	<ul>
-	  <li>Full-stack development, DevOps, system administration</li>
 	  <li>Microservices architecture, containerization with Docker</li>
-	  <li>Networking, Linux, macOS, Windows, Bash</li>
-	  <li>Python, C, C++, JavaScript, HTML, CSS</li>
-	  <li>Git, Emacs, SDL, Django</li>
-	  <li>Software design, debugging, and optimization</li>
+	  <li>Full-stack development, DevOps, system administration</li>
+	  <li>Software engineering, full-stack web development</li>
 	  <li>Agile methodologies, CI/CD pipelines, cloud infrastructure</li>
+	  <li>C, C++, Python, JavaScript, HTML, CSS, Docker, git, bash</li>
+	  <li>Linux, macOS, Windows, Emacs, Vim</li>
+	  <li>Django, SDL</li>
 	</ul>
       </div>
-
     </main>
   </body>
 </html>

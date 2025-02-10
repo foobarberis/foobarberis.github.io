@@ -8,8 +8,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="/assets/favicon/site.webmanifest">
-    <link rel="stylesheet" href="/css/tachyons.css">
-    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="preload stylesheet" href="/css/tachyons.css" as="style" type="text/css" crossorigin="anonymous">
+    <link rel="preload stylesheet" href="/css/custom.css" as="style" type="text/css" crossorigin="anonymous">
     <title>Portfolio | Matthieu Barberis</title>
   </head>
 
@@ -24,7 +24,9 @@
 	<div class="flex justify-around">
 	  <a class="hover-gold link near-white nowrap" href="/">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
 	  <a class="gold link nowrap" href="/portfolio.html">Portfolio</a>&nbsp;&nbsp;&nbsp;&nbsp;
-	  <a class="hover-gold link near-white nowrap" href="/resume.html">Resume</a>&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a class="hover-gold link near-white nowrap" href="/resume.html" target="_blank" rel="noopener noreferrer">
+	    Resume
+	  </a>&nbsp;&nbsp;&nbsp;&nbsp;
 	</div>
 
 	<div class="flex justify-around">
