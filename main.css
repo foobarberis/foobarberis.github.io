@@ -7843,6 +7843,20 @@ code {
     width: 24px;
 }
 
+/* .mw4: 8rem */
+.mw--4 {
+    max-width: 12rem;
+}
+
+/* .mw5: 16rem */
+.mw--5 {
+    max-width: 18rem;
+}
+
+/* .mw6: 32rem */
+.mw--6 {
+    max-width: 24rem;
+}
 
 /* RESUME */
 
