@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Matthieu Barberis: Aspiring Digital Technology Architect with a focus on DevOps, cybersecurity, and software development. Explore my portfolio and connect for opportunities.">
+    <meta name="description" content="Explore Matthieu Barberis' resume, showcasing his skills in DevOps, cybersecurity, and software development, along with his education and professional experience.">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
@@ -11,6 +11,84 @@
     <link rel="preload stylesheet" href="style.css" as="style" type="text/css" crossorigin="anonymous">
     <link rel="preload" href="/assets/fonts/roboto-flex/static/RobotoFlex-Regular.ttf" as="font" type="font/ttf" fetchpriority="high" crossorigin>
     <title>Resume | Matthieu Barberis</title>
+
+    <style>
+      li {
+	  list-style-type: •;
+	  padding-left: 0.25rem;
+      }
+
+      li::marker {
+	  font-size: 1rem;
+      }
+
+      .shadow-1 {
+	  box-shadow: 0px 0px 4px 2px rgba(0, 12, 30, 1);
+      }
+
+      .w-icon-resume {
+	  width: 1.5rem;
+      }
+
+      .lh-small {
+	  line-height: 0.1;
+      }
+
+      /* Page settings for PDF rendering */
+
+      .page {
+	  /* Styles for better appearance on screens only -- are reset to defaults in print styles later */
+
+	  /* Reflect the paper width in the screen rendering (must match size from @page rule) */
+	  width: 21cm;
+	  /* Reflect the paper height in the screen rendering (must match size from @page rule) */
+	  min-height: 29.7cm;
+
+	  /* Reflect the actual page margin/padding on paper in the screen rendering (must match margin from @page rule) */
+	  padding-left: 0.5cm;
+	  padding-top: 0.5cm;
+	  padding-right: 0.5cm;
+	  padding-bottom: 0.5cm;
+      }
+
+      @page {
+	  /* You can only change the size, margins, orphans, widows and page breaks here */
+
+	  /* Paper size and page orientation */
+	  size: A4 portrait;
+
+	  /* Margin per single side of the page */
+	  margin-left: 0.5cm;
+	  margin-top: 0.5cm;
+	  margin-right: 0.5cm;
+	  margin-bottom: 0.5cm;
+
+      }
+
+      @media print {
+	  @page {
+	      /* You can only change the size, margins, orphans, widows and page breaks here */
+
+	      /* Paper size and page orientation */
+	      size: A4 portrait;
+
+	      /* Margin per single side of the page */
+	      margin-left: 0.5cm;
+	      margin-top: 0.5cm;
+	      margin-right: 0.5cm;
+	      margin-bottom: 0.5cm;
+	  }
+	  
+	  .w-40-print { width: 40%; }
+	  .w-60-print { width: 60%; }
+	  .bw1-print { border-width: .125rem; }
+	  .db-print { display: block; }
+	  .dn-print { display: none; }
+	  .bt-print { border-top-style: solid; }
+	  .bb-print { border-bottom-style: solid; }
+	  .flex-row-print  { flex-direction: row; }
+      }
+    </style>
   </head>
 
   <body class="center flex flex-column items-center mw8 roboto" style="min-width: 360px;">
