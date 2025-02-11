@@ -7843,6 +7843,11 @@ code {
     width: 24px;
 }
 
+/* .w4: 8rem */
+.w--4 {
+    width: 12rem;
+}
+
 /* .mw4: 8rem */
 .mw--4 {
     max-width: 12rem;
