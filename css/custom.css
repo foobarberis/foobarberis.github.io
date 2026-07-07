@@ -1,0 +1,188 @@
+/********** CUSTOM **********/
+
+/* .w4: 8rem */
+.w--4 {
+	width: 12rem;
+}
+
+/* .mw4: 8rem */
+.mw--4 {
+	max-width: 12rem;
+}
+
+/* .mw5: 16rem */
+.mw--5 {
+	max-width: 18rem;
+}
+
+/* .mw6: 32rem */
+.mw--6 {
+	max-width: 24rem;
+}
+
+.br-pill {
+	font-weight: 500;
+}
+
+.project-list li {
+	margin-bottom: .5rem;
+}
+
+.project-list li:last-child {
+	margin-bottom: 0;
+}
+
+/********** RESUME **********/
+
+@font-face {
+	font-family: "Quicksand";
+	src: url("/assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf") format("truetype");
+	font-weight: 300 700;
+	font-display: swap;
+}
+
+.quicksand {
+	font-family: "Quicksand", sans-serif;
+}
+
+.theme-sage {
+	--site-page-bg: #fffaf0;
+	--site-text: #26302b;
+	--site-panel-bg: #e7f0e8;
+	--site-accent: #496f5d;
+	--site-border: #a9bcae;
+	--site-photo-border: #f8f5ed;
+	--site-shadow: rgba(38, 48, 43, 0.22);
+	--resume-page-bg: var(--site-page-bg);
+	--resume-text: var(--site-text);
+	--resume-sidebar-bg: var(--site-panel-bg);
+	--resume-sidebar-text: var(--site-text);
+	--resume-accent: var(--site-accent);
+	--resume-sidebar-border: var(--site-border);
+	--resume-photo-border: var(--site-photo-border);
+	--resume-shadow: var(--site-shadow);
+}
+
+.bg-site-page,
+.bg-resume-page {
+	background-color: var(--site-page-bg);
+}
+
+.site-text,
+.resume-text {
+	color: var(--site-text);
+}
+
+.bg-site-panel,
+.bg-resume-sidebar {
+	background-color: var(--site-panel-bg);
+}
+
+.site-accent,
+.resume-accent {
+	color: var(--site-accent);
+}
+
+.hover-site-accent:focus,
+.hover-site-accent:hover {
+	color: var(--site-accent);
+}
+
+.b--site-border,
+.b--resume-sidebar {
+	border-color: var(--site-border);
+}
+
+.b--site-photo,
+.b--resume-photo {
+	border-color: var(--site-photo-border);
+}
+
+.shadow-site,
+.shadow-resume {
+	box-shadow: 0 0 4px 2px var(--site-shadow);
+}
+
+.resume-sidebar-text {
+	color: var(--site-text);
+}
+
+.text-shadow-none {
+	text-shadow: none;
+}
+
+.min-w-360 {
+	min-width: 360px;
+}
+
+.w-icon-resume {
+	width: 1.5rem;
+}
+
+.page-a4 {
+	width: 21cm;
+	min-height: 29.7cm;
+	padding: 0.5cm;
+}
+
+.resume-list-markers li {
+	list-style-type: "•";
+	padding-left: 0.25rem;
+}
+
+.resume-list-markers li::marker {
+	font-size: 1rem;
+}
+
+@page {
+	size: A4 portrait;
+	margin: 0;
+}
+
+@media print {
+	@page {
+		size: A4 portrait;
+		margin: 0;
+	}
+
+	.w-40-print {
+		width: 40%;
+	}
+
+	.w-60-print {
+		width: 60%;
+	}
+
+	.bw1-print {
+		border-width: .125rem;
+	}
+
+	.db-print {
+		display: block;
+	}
+
+	.dn-print {
+		display: none;
+	}
+
+	.bt-print {
+		border-top-style: solid;
+	}
+
+	.bb-print {
+		border-bottom-style: solid;
+	}
+
+	.flex-row-print {
+		flex-direction: row;
+	}
+
+	page > .bg-resume-sidebar {
+		box-sizing: border-box;
+		min-height: calc(29.7cm - 1rem);
+	}
+}
+
+.pl-015 {
+	padding-left: .15rem;
+}

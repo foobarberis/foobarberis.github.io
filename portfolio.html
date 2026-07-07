@@ -1,337 +1,293 @@
 <!DOCTYPE html>
-<html class="content-center flex flex-column items-center w-100" lang="en">
+<html class="theme-sage bg-site-page content-center flex flex-column items-center w-100" lang="en">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="The project portfolio of Matthieu Barberis, a Junior DevOps Engineer. Showcasing projects featuring Docker, Linux, CI/CD, and cloud technologies.">
+	<meta name="description" content="Matthieu Barberis' portfolio featuring DevOps, Docker, Java, C/C++, networking, Linux, and systems programming projects.">
 	<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
 	<link rel="manifest" href="/assets/favicon/site.webmanifest">
-	<link rel="preload" href="/assets/images/portfolio/inception.png" as="image" type="image/png" fetchpriority="high">
-	<link rel="preload" href="/assets/fonts/roboto-flex/static/RobotoFlex-Regular.ttf" as="font" type="font/ttf" fetchpriority="high" crossorigin>
+	<link rel="preload" href="/assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf" as="font" type="font/ttf" fetchpriority="high" crossorigin>
 	<link rel="preload stylesheet" href="style.css" as="style" type="text/css" crossorigin="anonymous">
 	<title>Portfolio | Matthieu Barberis</title>
 </head>
 
-<body class="bg-white black br2 f5-ns f6 flex flex-column mw7-ns roboto shadow-2 w-100" style="min-width: 320px">
+<body class="bg-site-page site-text br2 f5-ns f6 flex flex-column min-vh-100-ns mw7-ns quicksand shadow-site w-100" style="min-width: 320px">
 
-	<header class="bg-navy br1 drop-shadow items-center justify-around near-white pa3">
+	<header class="bg-site-panel br1 pa3">
+		<h1 class="f2-ns f3 site-accent lh-title mt0"><a class="hover-site-accent site-accent link nowrap" href="/">Matthieu Barberis</a></h1>
 
-		<h1 class="center f2-ns f3 gold lh-title"><a class="gold link nowrap" href="/">Matthieu Barberis</a></h1>
-
-		<div class="flex flex-nowrap justify-between">
-
-			<div class="flex justify-around">
-				<a class="hover-gold link near-white nowrap" href="/">About</a>&nbsp;&nbsp;&nbsp;&nbsp;
-				<a class="gold link nowrap" href="/portfolio.html">Portfolio</a>&nbsp;&nbsp;&nbsp;&nbsp;
-				<a class="hover-gold link near-white nowrap" href="/resume.html" target="_blank" rel="noopener noreferrer">
-					Resume
-				</a>&nbsp;&nbsp;&nbsp;&nbsp;
-			</div>
-
-			<div class="flex justify-around">
-				<a class="hover-gold link near-white nowrap" href="mailto:foobarberis@gmail.com">E-mail</a>&nbsp;&nbsp;&nbsp;&nbsp;
-				<a class="hover-gold link near-white nowrap" href="https://github.com/foobarberis">GitHub</a>
-			</div>
-		</div>
+		<nav class="flex fw5 pl1">
+			<a class="hover-site-accent link site-text nowrap mr3" href="/">About</a>
+			<a class="hover-site-accent site-accent link nowrap mr3" href="/portfolio.html">Portfolio</a>
+			<a class="hover-site-accent link site-text nowrap" href="/resume.html" target="_blank" rel="noopener noreferrer">Resume</a>
+		</nav>
 	</header>
 
-	<main class="flex flex-column pa4">
+	<main class="flex flex-column flex-grow-1-ns pa4">
 
-		<p class="lh-copy">
-			This portfolio highlights key projects where I've applied my skills in DevOps, cloud, and systems administration. The projects are ordered by relevance to showcase my most impactful work first.
-		</p>
-
-		<h2>Featured DevOps & Cloud Projects</h2>
-
-		<!-- inception -->
-		<div>
-			<h3 class="lh-title mb2">
-				<a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/inception">inception</a>
-			</h3>
-			<h4 class="gray mt2 normal">docker docker-compose nginx mariadb wordpress</h4>
-			<img class="ba bw1 center db mw--6 w-100" src="/assets/images/portfolio/inception.png" alt="The Docker logo.">
-			<p class="lh-copy">
-				A project demonstrating containerization by deploying a multi-service WordPress site using Docker.
+		<section class="mb4">
+			<h2 class="f2-ns f3 lh-title mb2 mt0 site-accent">Portfolio</h2>
+			<p class="lh-copy mt0 mb2">
+				DevOps, systems, networking, and software projects.
 			</p>
-			<ul>
-				<li>Orchestrated a multi-container web stack (Nginx, WordPress, MariaDB) using Docker Compose.</li>
-				<li>Engineered custom Dockerfiles from scratch for each service to create lightweight and secure images.</li>
-				<li>Configured network and volume bindings to ensure persistent data and seamless communication between services.</li>
-				<li>Demonstrated core skills in containerization, service networking, and infrastructure as code principles.</li>
-			</ul>
-			<hr>
-		</div>
-
-		<!-- ft_transcendence -->
-		<div>
-			<h3 class="lh-title mb2">
-				<a class="black link" href="https://github.com/42-transcendence-org/42-transcendence">ft_transcendence</a>
-			</h3>
-			<h4 class="gray mt2 normal">docker microservices django javascript nginx teamwork</h4>
-			<video class="ba bw1 center db mw--5 w-100" autoplay loop>
-				<source src="/assets/videos/portfolio/transcendence.webm" type="video/webm" />
-			</video>
-			<p class="lh-copy">
-				A real-time online Pong game built with a containerized microservice architecture.
+			<p class="lh-copy mt0">
+				Many of the projects below were completed through 42’s software-engineering curriculum, alongside personal and professional work.
 			</p>
-			<ul>
-				<li>Designed and deployed a containerized microservice application with Docker, featuring separate services for the backend, frontend, and database.</li>
-				<li>Implemented a RESTful API with Django for user authentication, game logic, and data management.</li>
-				<li>Developed a dynamic frontend in pure JavaScript to handle real-time gameplay and user interactions.</li>
-				<li>Configured Nginx as a reverse proxy to route traffic to the appropriate services.</li>
-			</ul>
-			<hr>
-		</div>
+			<nav class="lh-copy">
+				<ul class="mb0 pl3">
+					<li><a class="hover-site-accent site-accent" href="#featured">Featured Work</a></li>
+					<li><a class="hover-site-accent site-accent" href="#software-systems">Software & Systems Projects</a></li>
+					<li><a class="hover-site-accent site-accent" href="#additional">Additional Projects</a></li>
+				</ul>
+			</nav>
+		</section>
 
-		<!-- born2beroot -->
-		<div>
-			<h3 class="lh-title mb2">
-				<a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/born2beroot">born2beroot</a>
-			</h3>
-			<h4 class="gray mt2 normal">linux system-administration security devops</h4>
-			<img class="ba bw1 center db mw--5 w-100" src="/assets/images/portfolio/b2br.webp" alt="Diagram showing how virtualization works.">
-			<p class="lh-copy">
-				A system administration project focused on installing, securing, and configuring a Linux server on a virtual machine.
-			</p>
-			<ul>
-				<li>Installed and hardened a Debian Linux server from scratch in a virtualized environment.</li>
-				<li>Configured a firewall with UFW and implemented security policies with AppArmor.</li>
-				<li>Set up a strong password policy using PAM (Pluggable Authentication Modules).</li>
-				<li>Wrote a Bash script to monitor system status and provide hourly updates.</li>
-				<li>Gained hands-on experience in Linux system administration, security hardening, and monitoring.</li>
-			</ul>
-			<hr>
-		</div>
+		<details id="featured" class="mb4" open>
+			<summary class="f3 fw7 lh-title mb3 site-accent pointer">Featured Work (6)</summary>
 
-		<h2>Other Academic & Personal Projects</h2>
+			<article class="bg-site-panel br2 mb4 pa3 shadow-site">
+				<h3 class="lh-title mb2 mt0">bioMérieux DevOps infrastructure</h3>
+				<img class="center db mb3" src="/assets/images/portfolio/bmx.svg" width="176" height="176" alt="bioMérieux logo">
+				<h4 class="fw4 lh-copy mt2 normal">
+					<span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">GitLab CI/CD</span>
+					<span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">Jenkins</span>
+					<span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">Docker</span>
+					<span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">VMware vSphere</span>
+					<span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">Prometheus</span>
+					<span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">Grafana</span>
+				</h4>
+				<p class="lh-copy">
+					DevOps infrastructure for 3P Connect, a web application for environmental control and traceability in pharmaceutical and industrial settings.
+				</p>
+				<ul class="lh-copy">
+					<li>Migrated about 20 Jenkins pipelines to GitLab CI/CD, verified that artifacts matched Jenkins build outputs, and retired three Jenkins VMs in favor of shared Linux runners.</li>
+					<li>Dockerized Robot Framework test execution and moved three test suites from a dedicated Windows runner to shared Linux runners.</li>
+					<li>Built three GitLab CI/CD pipelines: one to update Windows VM templates, one to deploy 3P Connect components to a VM, and one to create a ready-to-use integration VM in under one hour.</li>
+					<li>Deployed Prometheus/Grafana dashboards for four runners, 12 integration VMs, CI/CD metrics, and load tests.</li>
+				</ul>
+				<p class="lh-copy mb0"><span class="b">Shows:</span> CI/CD migration, Dockerized test infrastructure, VM provisioning automation, and observability.</p>
+			</article>
 
-		<p>
-			You can find all my projects for 42 in this
-			<a class="black" href="https://github.com/foobarberis/42-common-core/tree/main">
-				repository
-			</a>
-			or click on each project's name to see its code.
-		</p>
+			<article class="bg-site-panel br2 mb4 pa3 shadow-site">
+				<h3 class="lh-title mb2 mt0"><a class="hover-site-accent site-accent link" href="https://github.com/foobarberis/42-common-core/tree/main/inception">inception</a></h3>
+				<h4 class="fw4 lh-copy mt2 normal">
+					<span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">Docker</span>
+					<span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">Docker Compose</span>
+					<span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">Nginx</span>
+					<span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">MariaDB</span>
+					<span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">WordPress</span>
+				</h4>
+				<img class="b--site-border ba br2 bw1 center db mw7 w-100" src="/assets/images/portfolio/inception-architecture.svg" alt="Architecture diagram showing the browser, Nginx, WordPress with PHP-FPM, MariaDB, Docker network, and persistent volumes.">
+				<p class="lh-copy">Containerized WordPress infrastructure built from custom Debian Dockerfiles and orchestrated with Docker Compose.</p>
+				<ul class="lh-copy">
+					<li>Separated Nginx, WordPress/PHP-FPM, and MariaDB into isolated services.</li>
+					<li>Exposed Nginx as the only HTTPS entrypoint on port 443.</li>
+					<li>Configured Docker networking and persistent volumes for database and site data.</li>
+					<li>Built custom service images instead of using ready-made images.</li>
+				</ul>
+				<p class="lh-copy mb0"><span class="b">Shows:</span> Docker image design, service isolation, TLS entrypoint configuration, and persistent storage.</p>
+			</article>
 
-		<!-- Truff' and Co -->
-		<div>
-			<h3 class="lh-title mb2">
-				<a class="black link" href="https://truff-and-co.fr/">Truff' and Co</a>
-			</h3>
-			<h4 class="gray mt2 normal">html css web-design</h4>
-			<img class="ba bw1 center db mw5 w-100" src="/assets/images/portfolio/truffandco.jpg" alt="Screenshot of the Truff and Co website.">
-			<p class="lh-copy">
-				A simple, lightweight, and responsive website developed for a pet-sitting business, focusing on accessibility and fast load times.
-			</p>
-			<hr>
-		</div>
+			<article class="bg-site-panel br2 mb4 pa3 shadow-site">
+				<h3 class="lh-title mb2 mt0"><a class="hover-site-accent site-accent link" href="https://github.com/42-transcendence-org/42-transcendence">ft_transcendence</a></h3>
+				<h4 class="fw4 lh-copy mt2 normal">
+					<span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">Docker</span>
+					<span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">Django</span>
+					<span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">JavaScript</span>
+					<span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">Nginx</span>
+					<span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">teamwork</span>
+				</h4>
+				<video class="b--site-border ba br2 bw1 center db mw--5 w-100" autoplay loop muted playsinline>
+					<source src="/assets/videos/portfolio/transcendence.webm" type="video/webm" />
+				</video>
+				<p class="lh-copy">Single-page Pong tournament application built by a team around a microservices architecture.</p>
+				<ul class="lh-copy">
+					<li>I implemented both Pong versions: a solo offline game in vanilla JavaScript and a multiplayer game using JavaScript and Python/Django.</li>
+					<li>The single-page frontend handles authentication, navigation, and gameplay.</li>
+					<li>Deployment uses Nginx routing and Docker Compose.</li>
+					<li>The application implements required web-security controls, including HTTPS and input validation.</li>
+				</ul>
+				<p class="lh-copy mb0"><span class="b">Shows:</span> JavaScript game development, multiplayer architecture, and team collaboration.</p>
+			</article>
 
-		<!-- 3D Computer Graphics -->
-		<div>
-			<h3 class="lh-title mb2">
-				<a class="black link" href="https://pikuma.com/courses/learn-3d-computer-graphics-programming">
-					3D Computer Graphics Programming
-				</a>
-			</h3>
-			<h4 class="gray mt2 normal">3d-graphics c mathematics</h4>
-			<video class="ba bw1 center db mw--6 w-100" autoplay loop>
-				<source src="/assets/videos/portfolio/f-22.webm" type="video/webm" />
-			</video>
-			<p class="lh-copy">
-				A course on 3D graphics programming from first principles using C, covering transformations, projections, and lighting.
-			</p>
-			<hr>
-		</div>
+			<article class="bg-site-panel br2 mb4 pa3 shadow-site">
+				<h3 class="lh-title mb2 mt0"><a class="hover-site-accent site-accent link" href="https://github.com/foobarberis/42-common-core/tree/main/ft_irc">ft_irc</a></h3>
+				<h4 class="fw4 lh-copy mt2 normal">
+					<span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">C++</span>
+					<span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">sockets</span>
+					<span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">non-blocking I/O</span>
+					<span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">protocols</span>
+				</h4>
+				<img class="b--site-border ba br2 bw1 center db mw6 w-100" src="/assets/images/portfolio/irc.jpg" alt="An IRC client connected to a server.">
+				<p class="lh-copy">C++ IRC server handling multiple clients over TCP with non-blocking sockets.</p>
+				<ul class="lh-copy">
+					<li>I implemented the networking layer and core IRC commands and replies: PASS, PING, NICK, QUIT, USER, and the welcome reply.</li>
+					<li>The server uses non-blocking sockets with a single poll-based event loop.</li>
+					<li>It supports IRC commands and channel modes such as KICK, INVITE, TOPIC, and MODE.</li>
+					<li>Shared server state tracks users, channels, permissions, and message routing.</li>
+				</ul>
+				<p class="lh-copy mb0"><span class="b">Shows:</span> network I/O, protocol implementation, and stateful server design.</p>
+			</article>
 
-		<!-- 6502 Assembly -->
-		<div>
-			<h3 class="lh-title mb2">
-				<a class="black link" href="https://pikuma.com/courses/learn-assembly-language-programming-atari-2600-games">
-					Atari 2600 Programming with 6502 Assembly
-				</a>
-			</h3>
-			<h4 class="gray mt2 normal">computer-architecture 6502-assembly</h4>
-			<img class="ba bw1 center db mw--6 w-100" src="/assets/images/portfolio/atari2600.jpg" alt="Picture of an Atari 2600.">
-			<p class="lh-copy">
-				A deep dive into 6502 assembly and computer architecture by programming a game for the Atari 2600 console.
-			</p>
-			<hr>
-		</div>
+			<article class="bg-site-panel br2 mb4 pa3 shadow-site">
+				<h3 class="lh-title mb2 mt0"><a class="hover-site-accent site-accent link" href="https://github.com/foobarberis/42-common-core/tree/main/minishell">minishell</a></h3>
+				<h4 class="fw4 lh-copy mt2 normal">
+					<span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">C</span>
+					<span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">Unix</span>
+					<span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">parser</span>
+					<span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">processes</span>
+					<span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">teamwork</span>
+				</h4>
+				<img class="b--site-border ba br2 bw1 center db mw7 w-100" src="/assets/images/portfolio/minishell-pipeline.svg" alt="Horizontal diagram of the minishell command pipeline: input, lexer, parser, expansion, executor, and Unix system calls.">
+				<p class="lh-copy">Unix shell in C implementing a subset of Bash parsing, expansion, and process execution.</p>
+				<ul class="lh-copy">
+					<li>I implemented the lexer and parser for quotes, environment expansion, $?, pipes, redirections, heredocs, and append mode.</li>
+					<li>The shell resolves commands through PATH and uses fork, execve, pipes, dup2, and wait handling for execution.</li>
+					<li>It supports the required builtins: echo, cd, pwd, export, unset, env, and exit.</li>
+					<li>It reproduces expected interactive behavior for Ctrl-C, Ctrl-D, and Ctrl-\.</li>
+				</ul>
+				<p class="lh-copy mb0"><span class="b">Shows:</span> Unix process control, parsing, file descriptors, pipes, and signals.</p>
+			</article>
 
-		<!-- ft_irc -->
-		<div>
-			<h3 class="lh-title mb2">
-				<a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/ft_irc">ft_irc</a>
-			</h3>
-			<h4 class="gray mt2 normal">c++ git network-programming teamwork</h4>
-			<img class="ba bw1 center db mw6 w-100" src="/assets/images/portfolio/irc.jpg" alt="An IRC client connected to a server.">
-			<p class="lh-copy">
-				An IRC server compliant with RFC 1459, built in C++ to handle multiple simultaneous connections using non-blocking I/O.
-			</p>
-			<hr>
-		</div>
+			<article class="bg-site-panel br2 mb4 pa3 shadow-site">
+				<h3 class="lh-title mb2 mt0"><a class="hover-site-accent site-accent link" href="https://github.com/foobarberis/42-fix-me">Fixme</a></h3>
+				<h4 class="fw4 lh-copy mt2 normal">
+					<span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">Java</span>
+					<span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">Maven</span>
+					<span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">non-blocking sockets</span>
+					<span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">concurrency</span>
+					<span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">FIX-inspired protocol</span>
+				</h4>
+				<img class="b--site-border ba br2 bw1 center db mw7 w-100" src="/assets/images/portfolio/fixme-routing.svg" alt="FIX-like routing diagram showing Broker and Market messages passing through a Router over non-blocking TCP sockets.">
+				<p class="lh-copy">Multi-module Java market-messaging simulation using a custom, FIX-inspired protocol over non-blocking TCP sockets.</p>
+				<ul class="lh-copy">
+					<li>Built Broker, Router, and Market components as independent runnable Maven modules.</li>
+					<li>Used non-blocking sockets and executor-based message handling.</li>
+					<li>Implemented FIX-like message validation, checksums, routing IDs, market registration, and order responses.</li>
+					<li>Designed router behavior around routing tables without embedding business logic.</li>
+				</ul>
+				<p class="lh-copy mb0"><span class="b">Shows:</span> non-blocking sockets, concurrent architecture, protocol parsing, and distributed component design.</p>
+			</article>
+		</details>
 
-		<!-- CPP Modules -->
-		<div>
-			<h3 class="lh-title mb2">
-				<a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/cpp-modules">C++ Modules</a>
-			</h3>
-			<h4 class="gray mt2 normal">c++ git object-oriented-programming</h4>
-			<img class="ba bw1 center db mw--4" src="/assets/images/portfolio/c++.png" alt="The C++ logo.">
-			<p class="lh-copy">
-				An extensive introduction to Object-Oriented Programming and C++98, covering core concepts like polymorphism, templates, and the STL.
-			</p>
-			<hr>
-		</div>
+		<details id="software-systems" class="mb4">
+			<summary class="f3 fw7 lh-title mb3 site-accent pointer">Software & Systems Projects (7)</summary>
+			<article class="bg-site-panel br2 mb3 pa3 shadow-site">
+				<h3 class="lh-title mb2 mt0"><a class="hover-site-accent site-accent link" href="https://github.com/foobarberis/42-malloc">malloc</a></h3>
+				<h4 class="fw4 lh-copy mt2 normal"><span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">C</span><span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">memory management</span><span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">mmap</span></h4>
+				<img class="b--site-border ba br2 bw1 center db mw--6 w-100" src="/assets/images/portfolio/malloc.png" alt="Terminal output from the custom malloc memory allocator project.">
+				<p class="lh-copy mb0">Custom malloc/free/realloc shared library using mmap/munmap, TINY/SMALL/LARGE zones, block splitting/coalescing, and 16-byte alignment.</p>
+			</article>
 
-		<!-- cub3d -->
-		<div>
-			<h3 class="lh-title mb2">
-				<a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/cub3d">cub3d</a>
-			</h3>
-			<h4 class="gray mt2 normal">c git teamwork graphics-programming</h4>
-			<img class="ba bw1 center db mw6 w-100" src="/assets/images/portfolio/cub3d.jpg" alt="A screenshot of the game showing Wolfenstein-like corridors.">
-			<p class="lh-copy">
-				A 3D game engine similar to Wolfenstein 3D, built from scratch in C using ray casting techniques for rendering.
-			</p>
-			<hr>
-		</div>
+			<article class="bg-site-panel br2 mb3 pa3 shadow-site">
+				<h3 class="lh-title mb2 mt0"><a class="hover-site-accent site-accent link" href="https://github.com/foobarberis/42-common-core/tree/main/push_swap">push_swap</a></h3>
+				<h4 class="fw4 lh-copy mt2 normal"><span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">C</span><span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">algorithms</span><span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">sorting</span></h4>
+				<video class="b--site-border ba br2 bw1 center db mw6 w-100" autoplay loop muted playsinline>
+					<source src="/assets/videos/portfolio/push_swap.webm" type="video/webm" />
+				</video>
+				<p class="lh-copy mb0">C program that sorts integers with a limited instruction set—push, swap, and rotate—across two stacks, producing an operation sequence designed to use few moves.</p>
+			</article>
 
-		<!-- netpractice -->
-		<div>
-			<h3 class="lh-title mb2">
-				<a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/netpractice">netpractice</a>
-			</h3>
-			<h4 class="gray mt2 normal">networking</h4>
-			<img class="ba bw1 center db mw--6 w-100" src="/assets/images/portfolio/netpractice.jpg" alt="Screenshot of one of the puzzles.">
-			<p class="lh-copy">
-				A series of puzzles designed to teach the fundamentals of TCP/IP networking, including subnetting and routing.
-			</p>
-			<hr>
-		</div>
+			<article class="bg-site-panel br2 mb3 pa3 shadow-site">
+				<h3 class="lh-title mb2 mt0"><a class="hover-site-accent site-accent link" href="https://github.com/foobarberis/42-common-core/tree/main/cub3d">cub3D</a></h3>
+				<h4 class="fw4 lh-copy mt2 normal"><span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">C</span><span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">ray casting</span><span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">graphics programming</span></h4>
+				<img class="b--site-border ba br2 bw1 center db mw6 w-100" src="/assets/images/portfolio/cub3d.jpg" alt="A screenshot of the game showing Wolfenstein-like corridors.">
+				<p class="lh-copy mb0">Wolfenstein-style first-person 3D maze in C using ray casting. It loads a .cub scene, renders textured walls and floor/ceiling colors, and supports WASD movement and left/right rotation.</p>
+			</article>
 
-		<!-- minishell -->
-		<div>
-			<h3 class="lh-title mb2">
-				<a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/minishell">minishell</a>
-			</h3>
-			<h4 class="gray mt2 normal">c git shell system-programming teamwork</h4>
-			<img class="ba bw1 center db mw6 w-100" src="/assets/images/portfolio/minishell.jpg" alt="Screenshot of Bash's manual page.">
-			<p class="lh-copy">
-				A custom shell that replicates key features of Bash, including pipes, redirections, and command execution using a lexer and parser.
-			</p>
-			<hr>
-		</div>
+			<article class="bg-site-panel br2 mb3 pa3 shadow-site">
+				<h3 class="lh-title mb2 mt0"><a class="hover-site-accent site-accent link" href="https://github.com/foobarberis/42-common-core/tree/main/fdf">fdf</a></h3>
+				<h4 class="fw4 lh-copy mt2 normal"><span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">C</span><span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">wireframe</span><span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">graphics programming</span></h4>
+				<img class="b--site-border ba br2 bw1 center db mw7 w-100" src="/assets/images/portfolio/fdf.png" alt="Screenshot of the program showing two different maps: Mars and the Mandelbrot Set.">
+				<p class="lh-copy mb0">Wireframe renderer in C, written from scratch, that parses elevation maps and projects (x, y, z) points into a 3D landscape made of line segments.</p>
+			</article>
 
-		<!-- philosophers -->
-		<div>
-			<h3 class="lh-title mb2">
-				<a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/philosophers/philo">philosophers</a>
-			</h3>
-			<h4 class="gray mt2 normal">c git multithreading system-programming</h4>
-			<img class="ba bw1 center db mw5 w-100" src="/assets/images/portfolio/philosophers.jpg" alt="Illustration of the dining philosophers problem.">
-			<p class="lh-copy">
-				A C program that solves the classic dining philosophers problem, demonstrating multithreading and deadlock prevention with mutexes.
-			</p>
-			<hr>
-		</div>
+			<article class="bg-site-panel br2 mb3 pa3 shadow-site">
+				<h3 class="lh-title mb2 mt0"><a class="hover-site-accent site-accent link" href="https://github.com/foobarberis/42-swingy">Swingy</a></h3>
+				<h4 class="fw4 lh-copy mt2 normal"><span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">Java</span><span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">Maven</span><span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">MVC</span><span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">Swing</span></h4>
+				<img class="center db mw6 w-100" src="/assets/images/portfolio/swingy.png" alt="Screenshot of the Swingy graphical user interface.">
+				<p class="lh-copy mb0">Text-based RPG written in Java using the MVC pattern, with console and Swing modes, CSV hero persistence, validation, map generation, encounters, XP leveling, and artifacts.</p>
+			</article>
 
-		<!-- fdf -->
-		<div>
-			<h3 class="lh-title mb2">
-				<a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/fdf">fdf</a>
-			</h3>
-			<h4 class="gray mt2 normal">c git graphics-programming</h4>
-			<img class="ba bw1 center db mw7 w-100" src="/assets/images/portfolio/fdf.png" alt="Screenshot of the program showing two different maps: Mars and the Mandelbrot Set.">
-			<p class="lh-copy">
-				A wireframe 3D graphics project that processes elevation data from a file to render a landscape.
-			</p>
-			<hr>
-		</div>
+			<article class="bg-site-panel br2 mb3 pa3 shadow-site">
+				<h3 class="lh-title mb2 mt0"><a class="hover-site-accent site-accent link" href="https://github.com/foobarberis/42-turing">ft_turing</a></h3>
+				<h4 class="fw4 lh-copy mt2 normal"><span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">OCaml</span><span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">Turing machine</span><span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">JSON</span></h4>
+				<img class="b--site-border ba br2 bw1 center db mw--6 w-100" src="/assets/images/portfolio/ft_turing.png" alt="Terminal output from ft_turing showing Turing machine transitions.">
+				<p class="lh-copy mb0">OCaml single-tape Turing machine simulator with JSON machine validation and step-by-step tape and transition output.</p>
+			</article>
 
-		<!-- push_swap -->
-		<div>
-			<h3 class="lh-title mb2">
-				<a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/push_swap">push_swap</a>
-			</h3>
-			<h4 class="gray mt2 normal">c git algorithms</h4>
-			<video class="ba bw1 center db mw6 w-100" autoplay loop>
-				<source src="/assets/videos/portfolio/push_swap.webm" type="video/webm" />
-			</video>
-			<p class="lh-copy">
-				An algorithm project focused on sorting data on a stack with a limited set of instructions in the fewest moves possible.
-			</p>
-			<hr>
-		</div>
+			<article class="bg-site-panel br2 mb3 pa3 shadow-site">
+				<h3 class="lh-title mb2 mt0"><a class="hover-site-accent site-accent link" href="https://github.com/foobarberis/42-ality">ft_ality</a></h3>
+				<h4 class="fw4 lh-copy mt2 normal"><span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">OCaml</span><span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">finite automata</span><span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">parsing</span></h4>
+				<img class="b--site-border ba br2 bw1 center db mw--6 w-100" src="/assets/images/portfolio/ft_ality.png" alt="Terminal output from ft_ality recognizing fighting-game move sequences.">
+				<p class="lh-copy mb0">OCaml finite-state automaton built at runtime from fighting-game move grammars, with automatically computed keyboard mappings and move-sequence recognition.</p>
+			</article>
+		</details>
 
-		<!-- minitalk -->
-		<div>
-			<h3 class="lh-title mb2">
-				<a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/minitalk">minitalk</a>
-			</h3>
-			<h4 class="gray mt2 normal">c git signals system-programming</h4>
-			<img class="ba bw1 center db mw--5 w-100" src="/assets/images/portfolio/minitalk.jpg" alt="Screenshot showing the code of an important function.">
-			<p class="lh-copy">
-				A client-server program that communicates exclusively through UNIX signals to transmit text, including Unicode characters.
-			</p>
-			<hr>
-		</div>
-
-		<!-- get_next_line -->
-		<div>
-			<h3 class="lh-title mb2">
-				<a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/get_next_line">get_next_line</a>
-			</h3>
-			<h4 class="gray mt2 normal">c git system-programming</h4>
-			<img class="ba bw1 center db mw--5 w-100" src="/assets/images/portfolio/gnl.jpg" alt="Screenshot showing the code of an important function.">
-			<p class="lh-copy">
-				A C function that reads from a file descriptor and returns one line at a time, handling different buffer sizes and multiple files.
-			</p>
-			<hr>
-		</div>
-
-		<!-- ft_printf -->
-		<div>
-			<h3 class="lh-title mb2">
-				<a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/ft_printf">ft_printf</a>
-			</h3>
-			<h4 class="gray mt2 normal">c git system-programming</h4>
-			<img class="ba bw1 center db mw--5 w-100" src="/assets/images/portfolio/printf.jpg" alt="Screenshot showing the code of an important function.">
-			<p class="lh-copy">
-				A complete reimplementation of the C standard library function `printf(3)` with support for various format specifiers.
-			</p>
-			<hr>
-		</div>
-
-		<!-- libft -->
-		<div>
-			<h3 class="lh-title mb2">
-				<a class="black link" href="https://github.com/foobarberis/42-common-core/tree/main/libft">libft</a>
-			</h3>
-			<h4 class="gray mt2 normal">c git system-programming</h4>
-			<img class="ba bw1 center db mw--5 w-100" src="/assets/images/portfolio/libft.jpg" alt="Screenshot showing the code of an important function.">
-			<p class="lh-copy">
-				A custom C library of general-purpose functions, serving as a foundation for all subsequent C projects at 42.
-			</p>
-			<hr>
-		</div>
-
-		<!-- 42 Piscine -->
-		<div>
-			<h3 class="lh-title mb2">
-				<a class="black link" href="https://github.com/foobarberis/42-piscine">42 Piscine</a>
-			</h3>
-			<h4 class="gray mt2 normal">c git problem-solving teamwork</h4>
-			<img class="ba bw1 center db mw--5 w-100" src="/assets/images/portfolio/piscine.png" alt="Logo of 42 School.">
-			<p class="lh-copy">
-				A repository containing all exercises completed during the Piscine, the intensive one-month C programming bootcamp and selection process for 42.
-			</p>
-		</div>
+		<details id="additional" class="mb4">
+			<summary class="f3 fw7 lh-title mb3 site-accent pointer">Additional Projects (14)</summary>
+			<div class="bg-site-panel br2 pa3 shadow-site">
+				<ul class="lh-copy mb0 pl3 project-list">
+					<li><a class="hover-site-accent site-accent" href="https://github.com/foobarberis/42-piscine">42 Piscine</a> — foundational C exercises covering control flow, pointers, arrays, strings, recursion, and Unix basics.</li>
+					<li><a class="hover-site-accent site-accent" href="https://github.com/foobarberis/42-common-core/tree/main/libft">libft</a> — static C library reimplementing core libc functions plus string, memory, allocation, and linked-list helpers.</li>
+					<li><a class="hover-site-accent site-accent" href="https://github.com/foobarberis/42-common-core/tree/main/ft_printf">ft_printf</a> — printf-style formatter in C supporting c, s, p, d, i, u, x, X, and % conversions.</li>
+					<li><a class="hover-site-accent site-accent" href="https://github.com/foobarberis/42-common-core/tree/main/get_next_line">get_next_line</a> — C function that returns one line per call from a file descriptor, using static state and a compile-time BUFFER_SIZE.</li>
+					<li><a class="hover-site-accent site-accent" href="https://github.com/foobarberis/42-common-core/tree/main/minitalk">minitalk</a> — client-server IPC in C using only UNIX signals SIGUSR1 and SIGUSR2.</li>
+					<li><a class="hover-site-accent site-accent" href="https://github.com/foobarberis/42-common-core/tree/main/philosophers/philo">philosophers</a> — Dining Philosophers simulation with pthreads, mutex-protected forks, timing, and starvation/death detection.</li>
+					<li><a class="hover-site-accent site-accent" href="https://github.com/foobarberis/42-common-core/tree/main/cpp-modules">C++ Modules</a> — C++98 exercises covering OOP, inheritance, templates, exceptions, STL containers, and algorithms.</li>
+					<li><a class="hover-site-accent site-accent" href="https://github.com/foobarberis/42-common-core/tree/main/netpractice">netpractice</a> — 10 TCP/IP configuration puzzles involving IPv4 addressing, subnet masks, routing, and troubleshooting.</li>
+					<li><a class="hover-site-accent site-accent" href="https://github.com/foobarberis/42-avaj-launcher">avaj-launcher</a> — Java aircraft weather simulation with scenario parsing, input validation, movement rules, and Observer, Singleton, and Factory patterns.</li>
+					<li><a class="hover-site-accent site-accent" href="https://github.com/foobarberis/42-libasm">libasm</a> — x86-64 NASM library implementing libc-style routines callable from C with the System V calling convention.</li>
+					<li><a class="hover-site-accent site-accent" href="https://pikuma.com/courses/learn-3d-computer-graphics-programming">3D Computer Graphics Programming</a> — Coursework in C renderer development covering projection, rasterization, and lighting.</li>
+					<li><a class="hover-site-accent site-accent" href="https://pikuma.com/courses/learn-assembly-language-programming-atari-2600-games">Atari 2600 Programming with 6502 Assembly</a> — Coursework in low-level game programming with 6502 assembly.</li>
+					<li><a class="hover-site-accent site-accent" href="https://truff-and-co.fr/">Truff' and Co</a> — responsive website for a pet-sitting business.</li>
+					<li><a class="hover-site-accent site-accent" href="https://github.com/foobarberis/wg-pihole-docker">wg-pihole-docker</a> — Dockerized WireGuard and Pi-hole home networking stack.</li>
+				</ul>
+			</div>
+		</details>
 
 	</main>
+
+	<footer class="bg-site-panel br1 f6 fw5 pa3 tl">
+		<a class="hover-site-accent inline-flex items-center link site-text nowrap mr3" href="mailto:foobarberis@gmail.com">
+			<img class="mr2 w-icon-resume" src="./assets/icons/email.svg" alt="">
+			E-mail
+		</a>
+		<a class="hover-site-accent inline-flex items-center link site-text nowrap" href="https://github.com/foobarberis">
+			<img class="mr2 w-icon-resume" src="./assets/icons/github.svg" alt="">
+			GitHub
+		</a>
+	</footer>
+	<script>
+		function openDetails(hash, scroll) {
+			if (!hash)
+				return;
+			const target = document.querySelector(hash);
+			if (!target)
+				return;
+			if (target.tagName === "DETAILS")
+				target.open = true;
+			if (scroll)
+				target.scrollIntoView();
+		}
+
+		document.querySelectorAll('a[href^="#"]').forEach((link) => {
+			link.addEventListener("click", (event) => {
+				const hash = link.getAttribute("href");
+				if (!hash || hash === "#")
+					return;
+				event.preventDefault();
+				openDetails(hash, true);
+				history.pushState(null, "", hash);
+			});
+		});
+
+		openDetails(location.hash, false);
+		window.addEventListener("hashchange", () => openDetails(location.hash, false));
+	</script>
 </body>
 
 </html>

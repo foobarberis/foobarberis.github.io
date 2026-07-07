@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="260" viewBox="0 0 960 260" role="img" aria-labelledby="title desc">
+	<title id="title">minishell command pipeline</title>
+	<desc id="desc">Horizontal diagram showing a shell command moving through input, lexer, parser, expansion, executor, and Unix system calls.</desc>
+	<rect width="960" height="260" rx="18" fill="#fffaf0"/>
+	<g font-family="Quicksand, Arial, sans-serif" fill="#26302b">
+		<text x="480" y="40" text-anchor="middle" font-size="28" font-weight="600" fill="#496f5d">minishell execution pipeline</text>
+
+		<g font-size="24" font-weight="600">
+			<rect x="30" y="82" width="135" height="76" rx="12" fill="#e7f0e8" stroke="#a9bcae" stroke-width="2"/>
+			<text x="97.5" y="113" text-anchor="middle">input</text>
+			<text x="97.5" y="142" text-anchor="middle" font-size="17" font-weight="500">commands</text>
+
+			<path d="M176 120 H202" stroke="#496f5d" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+
+			<rect x="214" y="82" width="135" height="76" rx="12" fill="#e7f0e8" stroke="#a9bcae" stroke-width="2"/>
+			<text x="281.5" y="113" text-anchor="middle">lexer</text>
+			<text x="281.5" y="142" text-anchor="middle" font-size="17" font-weight="500">tokens</text>
+
+			<path d="M360 120 H386" stroke="#496f5d" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+
+			<rect x="398" y="82" width="135" height="76" rx="12" fill="#e7f0e8" stroke="#a9bcae" stroke-width="2"/>
+			<text x="465.5" y="113" text-anchor="middle">parser</text>
+			<text x="465.5" y="142" text-anchor="middle" font-size="17" font-weight="500">pipes / redirects</text>
+
+			<path d="M544 120 H570" stroke="#496f5d" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+
+			<rect x="582" y="82" width="135" height="76" rx="12" fill="#e7f0e8" stroke="#a9bcae" stroke-width="2"/>
+			<text x="649.5" y="113" text-anchor="middle">expand</text>
+			<text x="649.5" y="142" text-anchor="middle" font-size="17" font-weight="500">env / $?</text>
+
+			<path d="M728 120 H754" stroke="#496f5d" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+
+			<rect x="766" y="82" width="135" height="76" rx="12" fill="#e7f0e8" stroke="#a9bcae" stroke-width="2"/>
+			<text x="833.5" y="113" text-anchor="middle">execute</text>
+			<text x="833.5" y="142" text-anchor="middle" font-size="17" font-weight="500">builtins / PATH</text>
+		</g>
+
+		<path d="M833.5 162 V184" stroke="#496f5d" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+		<rect x="560" y="190" width="370" height="44" rx="10" fill="#26302b" opacity="0.92"/>
+		<text x="745" y="219" text-anchor="middle" font-size="18" font-weight="600" fill="#fffaf0">fork · pipe · dup2 · execve · wait · signals</text>
+	</g>
+
+	<defs>
+		<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+			<path d="M 0 0 L 10 5 L 0 10 z" fill="#496f5d"/>
+		</marker>
+	</defs>
+</svg>

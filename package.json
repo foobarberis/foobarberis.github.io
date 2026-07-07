@@ -1,0 +1,10 @@
+{
+  "name": "foobarberis.github.io",
+  "private": true,
+  "scripts": {
+    "build:css": "node scripts/build-css.mjs"
+  },
+  "devDependencies": {
+    "clean-css": "^5.3.3"
+  }
+}
