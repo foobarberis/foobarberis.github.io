@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Matthieu Barberis' portfolio featuring DevOps, Docker, Java, C/C++, networking, Linux, and systems programming projects.">
+	<meta name="description" content="Matthieu Barberis' portfolio featuring DevOps, Kubernetes, Docker, Java, C/C++, networking, Linux, and systems programming projects.">
 	<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
@@ -92,6 +92,27 @@
 			</article>
 
 			<article class="bg-site-panel br2 mb4 pa3 shadow-site">
+				<h3 class="lh-title mb2 mt0"><a class="hover-site-accent site-accent link" href="https://github.com/foobarberis/inception-of-things">Inception of Things</a></h3>
+				<h4 class="fw4 lh-copy mt2 normal">
+					<span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">Kubernetes</span>
+					<span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">K3s / K3d</span>
+					<span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">Vagrant</span>
+					<span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">Docker</span>
+					<span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">Traefik</span>
+					<span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">Argo CD / GitOps</span>
+				</h4>
+				<img class="b--site-border ba br2 bw1 center db mw7 w-100" src="/assets/images/portfolio/inception-of-things-architecture.svg" alt="Architecture diagram showing an outer Debian VM hosting K3s clusters provisioned with Vagrant and libvirt, plus a Docker-hosted K3d cluster deployed through Argo CD GitOps.">
+				<p class="lh-copy">Kubernetes infrastructure project that provisions reproducible K3s/K3d environments, routes applications with Traefik, and deploys through GitOps.</p>
+				<ul class="lh-copy">
+					<li>Provisioned a two-node K3s cluster in nested Debian VMs with Vagrant, libvirt, and a shared NFS join token.</li>
+					<li>Deployed three web applications behind Traefik Ingress with host-based routing and a catch-all route.</li>
+					<li>Created a Docker-hosted K3d cluster and configured Argo CD to synchronize, prune, and self-heal a separate GitHub manifest repository.</li>
+					<li>Automated installation, validation, access tunneling, and GitOps image-version testing with shell and Python scripts.</li>
+				</ul>
+				<p class="lh-copy mb0"><span class="b">Shows:</span> Kubernetes provisioning, ingress networking, GitOps deployment, and infrastructure automation.</p>
+			</article>
+
+			<article class="bg-site-panel br2 mb4 pa3 shadow-site">
 				<h3 class="lh-title mb2 mt0"><a class="hover-site-accent site-accent link" href="https://github.com/42-transcendence-org/42-transcendence">ft_transcendence</a></h3>
 				<h4 class="fw4 lh-copy mt2 normal">
 					<span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">Docker</span>
@@ -150,26 +171,6 @@
 					<li>It reproduces expected interactive behavior for Ctrl-C, Ctrl-D, and Ctrl-\.</li>
 				</ul>
 				<p class="lh-copy mb0"><span class="b">Shows:</span> Unix process control, parsing, file descriptors, pipes, and signals.</p>
-			</article>
-
-			<article class="bg-site-panel br2 mb4 pa3 shadow-site">
-				<h3 class="lh-title mb2 mt0"><a class="hover-site-accent site-accent link" href="https://github.com/foobarberis/42-fix-me">Fixme</a></h3>
-				<h4 class="fw4 lh-copy mt2 normal">
-					<span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">Java</span>
-					<span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">Maven</span>
-					<span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">non-blocking sockets</span>
-					<span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">concurrency</span>
-					<span class="bg-site-page b--site-border ba br-pill dib f7 mb2 mr2 ph2 pv1 site-text">FIX-inspired protocol</span>
-				</h4>
-				<img class="b--site-border ba br2 bw1 center db mw7 w-100" src="/assets/images/portfolio/fixme-routing.svg" alt="FIX-like routing diagram showing Broker and Market messages passing through a Router over non-blocking TCP sockets.">
-				<p class="lh-copy">Multi-module Java market-messaging simulation using a custom, FIX-inspired protocol over non-blocking TCP sockets.</p>
-				<ul class="lh-copy">
-					<li>Built Broker, Router, and Market components as independent runnable Maven modules.</li>
-					<li>Used non-blocking sockets and executor-based message handling.</li>
-					<li>Implemented FIX-like message validation, checksums, routing IDs, market registration, and order responses.</li>
-					<li>Designed router behavior around routing tables without embedding business logic.</li>
-				</ul>
-				<p class="lh-copy mb0"><span class="b">Shows:</span> non-blocking sockets, concurrent architecture, protocol parsing, and distributed component design.</p>
 			</article>
 		</details>
 
